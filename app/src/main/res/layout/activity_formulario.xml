@@ -42,7 +42,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="horizontal">
 
@@ -50,22 +50,17 @@
                 android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:text="RESULTADO" />
 
-            <Button
-                android:id="@+id/button5"
+            <Spinner
+                android:id="@+id/spinner"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@color/Indigo"
-                android:text="Button" />
+                android:layout_height="wrap_content" />
 
             <Button
                 android:id="@+id/button4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:text="Button" />
         </LinearLayout>
 
@@ -76,22 +71,20 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/textView10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="RESULTADO" />
 
-            <Button
-                android:id="@+id/button5"
+            <Spinner
+                android:id="@+id/spinner2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@color/Indigo"
-                android:text="Button" />
+                android:layout_weight="1" />
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/button6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -159,7 +152,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textView9"
+                            android:id="@+id/textmeleganada"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
@@ -170,26 +163,62 @@
                         <Button
                             android:id="@+id/angry_btn"
 
-                            android:text="+"
-                            android:textColor="#000000"
-                            android:textSize="30sp"
-
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:background="@drawable/boton"
-                            />
+
+                            android:text="+"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
 
                         <Button
                             android:id="@+id/angry_btn"
 
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/boton"
+
                             android:text="-"
                             android:textColor="#000000"
-                            android:textSize="30sp"
+                            android:textSize="30sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textmeleganada"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:text="@string/mele_pierde" />
+
+                        <Button
+                            android:id="@+id/angry_btn"
 
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:background="@drawable/boton"
-                            />
+
+                            android:text="+"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+
+                        <Button
+                            android:id="@+id/angry_btn"
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/boton"
+
+                            android:text="-"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -199,58 +228,35 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textView9"
+                            android:id="@+id/textmeleganada"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true"
                             android:layout_alignParentTop="true"
-
-                            android:text="@string/mele_pierde" />
-
-                        <Button
-                            android:id="@+id/button2"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-
-                            android:text="Button" />
-
-                        <Button
-                            android:id="@+id/button3"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:text="Button" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/textView9"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentStart="true"
-                            android:layout_alignParentTop="true"
-                            android:layout_weight="1"
                             android:text="@string/tocuh_gana" />
 
                         <Button
-                            android:id="@+id/button2"
+                            android:id="@+id/angry_btn"
+
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:layout_weight="1"
-                            android:text="Button" />
+                            android:background="@drawable/boton"
+
+                            android:text="+"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
 
                         <Button
-                            android:id="@+id/button3"
+                            android:id="@+id/angry_btn"
+
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:layout_weight="1"
-                            android:text="Button" />
+                            android:background="@drawable/boton"
+
+                            android:text="-"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -260,28 +266,35 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textView9"
+                            android:id="@+id/textmeleganada"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true"
                             android:layout_alignParentTop="true"
-                            android:layout_weight="1"
                             android:text="@string/tocuh_pierde" />
 
                         <Button
-                            android:id="@+id/button2"
+                            android:id="@+id/angry_btn"
+
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:layout_weight="1"
-                            android:text="Button" />
+                            android:background="@drawable/boton"
+
+                            android:text="+"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
 
                         <Button
-                            android:id="@+id/button3"
+                            android:id="@+id/angry_btn"
+
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:layout_weight="1"
-                            android:text="Button" />
+                            android:background="@drawable/boton"
+
+                            android:text="-"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -291,28 +304,35 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textView9"
+                            android:id="@+id/textmeleganada"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true"
                             android:layout_alignParentTop="true"
-                            android:layout_weight="1"
                             android:text="@string/golpes" />
 
                         <Button
-                            android:id="@+id/button2"
+                            android:id="@+id/angry_btn"
+
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:layout_weight="1"
-                            android:text="Button" />
+                            android:background="@drawable/boton"
+
+                            android:text="+"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
 
                         <Button
-                            android:id="@+id/button3"
+                            android:id="@+id/angry_btn"
+
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:layout_weight="1"
-                            android:text="Button" />
+                            android:background="@drawable/boton"
+
+                            android:text="-"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -322,28 +342,35 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textView9"
+                            android:id="@+id/textmeleganada"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true"
                             android:layout_alignParentTop="true"
-                            android:layout_weight="1"
                             android:text="@string/amarilla" />
 
                         <Button
-                            android:id="@+id/button2"
+                            android:id="@+id/angry_btn"
+
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:layout_weight="1"
-                            android:text="Button" />
+                            android:background="@drawable/boton"
+
+                            android:text="+"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
 
                         <Button
-                            android:id="@+id/button3"
+                            android:id="@+id/angry_btn"
+
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:layout_weight="1"
-                            android:text="Button" />
+                            android:background="@drawable/boton"
+
+                            android:text="-"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -353,28 +380,309 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textView9"
+                            android:id="@+id/textmeleganada"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true"
                             android:layout_alignParentTop="true"
-                            android:layout_weight="1"
                             android:text="@string/roja" />
 
                         <Button
-                            android:id="@+id/button2"
+                            android:id="@+id/angry_btn"
+
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:layout_weight="1"
-                            android:text="Button" />
+                            android:background="@drawable/boton"
+
+                            android:text="+"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
 
                         <Button
-                            android:id="@+id/button3"
+                            android:id="@+id/angry_btn"
+
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:layout_weight="1"
-                            android:text="Button" />
+                            android:background="@drawable/boton"
+
+                            android:text="-"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textmeleganada"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:text="@string/mele_gana" />
+
+                        <Button
+                            android:id="@+id/angry_btn"
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/boton"
+
+                            android:text="+"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+
+                        <Button
+                            android:id="@+id/angry_btn"
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/boton"
+
+                            android:text="-"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textmeleganada"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:text="@string/mele_pierde" />
+
+                        <Button
+                            android:id="@+id/angry_btn"
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/boton"
+
+                            android:text="+"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+
+                        <Button
+                            android:id="@+id/angry_btn"
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/boton"
+
+                            android:text="-"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textmeleganada"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:text="@string/tocuh_gana" />
+
+                        <Button
+                            android:id="@+id/angry_btn"
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/boton"
+
+                            android:text="+"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+
+                        <Button
+                            android:id="@+id/angry_btn"
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/boton"
+
+                            android:text="-"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textmeleganada"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:text="@string/tocuh_pierde" />
+
+                        <Button
+                            android:id="@+id/angry_btn"
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/boton"
+
+                            android:text="+"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+
+                        <Button
+                            android:id="@+id/angry_btn"
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/boton"
+
+                            android:text="-"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textmeleganada"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:text="@string/golpes" />
+
+                        <Button
+                            android:id="@+id/angry_btn"
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/boton"
+
+                            android:text="+"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+
+                        <Button
+                            android:id="@+id/angry_btn"
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/boton"
+
+                            android:text="-"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textmeleganada"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:text="@string/amarilla" />
+
+                        <Button
+                            android:id="@+id/angry_btn"
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/boton"
+
+                            android:text="+"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+
+                        <Button
+                            android:id="@+id/angry_btn"
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/boton"
+
+                            android:text="-"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textmeleganada"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:text="@string/roja" />
+
+                        <Button
+                            android:id="@+id/angry_btn"
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/boton"
+
+                            android:text="+"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+
+                        <Button
+                            android:id="@+id/angry_btn"
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/boton"
+
+                            android:text="-"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
                     </LinearLayout>
 
                 </LinearLayout>
