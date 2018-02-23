@@ -16,7 +16,8 @@
         <item name="android:width">@dimen/d50</item>
         <item name="android:height">@dimen/d50</item>
         <item name="android:background">@drawable/boton</item>
-        <item name="android:layout_margin">@dimen/d10</item>
+        <item name="android:layout_marginRight">@dimen/d15</item>
+
 
 
     </style>
@@ -29,8 +30,13 @@
         <item name="android:width">@dimen/d50</item>
         <item name="android:height">@dimen/d50</item>
         <item name="android:background">@drawable/boton</item>
-        <item name="android:layout_margin">@dimen/d10</item>
 
+
+    </style>
+
+    <style name="margin_layout">
+
+        <item name="android:layout_marginBottom">@dimen/d5</item>
 
     </style>
 

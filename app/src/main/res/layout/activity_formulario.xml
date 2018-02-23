@@ -149,6 +149,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        style="@style/margin_layout"
                         android:orientation="horizontal">
 
                         <TextView
@@ -157,6 +158,7 @@
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true"
+                            android:layout_marginRight="@dimen/d50"
                             android:layout_alignParentTop="true"
                             android:text="@string/mele_gana" />
 
@@ -167,9 +169,7 @@
                             android:layout_height="50dp"
                             android:background="@drawable/boton"
 
-                            android:text="+"
-                            android:textColor="#000000"
-                            android:textSize="30sp" />
+                            style="@style/botones_mas" />
 
                         <Button
                             android:id="@+id/angry_btn"
@@ -178,15 +178,14 @@
                             android:layout_height="50dp"
                             android:background="@drawable/boton"
 
-                            android:text="-"
-                            android:textColor="#000000"
-                            android:textSize="30sp" />
+                            style="@style/botones_menos" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        style="@style/margin_layout"
                         android:orientation="horizontal">
 
                         <TextView
@@ -196,6 +195,7 @@
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true"
                             android:layout_alignParentTop="true"
+                            android:layout_marginRight="@dimen/d50"
                             android:text="@string/mele_pierde" />
 
                         <Button
@@ -203,11 +203,7 @@
 
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:background="@drawable/boton"
-
-                            android:text="+"
-                            android:textColor="#000000"
-                            android:textSize="30sp" />
+                            style="@style/botones_mas" />
 
                         <Button
                             android:id="@+id/angry_btn"
@@ -216,15 +212,14 @@
                             android:layout_height="50dp"
                             android:background="@drawable/boton"
 
-                            android:text="-"
-                            android:textColor="#000000"
-                            android:textSize="30sp" />
+                            style="@style/botones_menos" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        style="@style/margin_layout"
                         android:orientation="horizontal">
 
                         <TextView
@@ -233,6 +228,7 @@
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true"
+                            android:layout_marginRight="@dimen/d50"
                             android:layout_alignParentTop="true"
                             android:text="@string/tocuh_gana" />
 
@@ -243,9 +239,7 @@
                             android:layout_height="50dp"
                             android:background="@drawable/boton"
 
-                            android:text="+"
-                            android:textColor="#000000"
-                            android:textSize="30sp" />
+                            style="@style/botones_mas" />
 
                         <Button
                             android:id="@+id/angry_btn"
@@ -254,15 +248,14 @@
                             android:layout_height="50dp"
                             android:background="@drawable/boton"
 
-                            android:text="-"
-                            android:textColor="#000000"
-                            android:textSize="30sp" />
+                            style="@style/botones_menos" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        style="@style/margin_layout"
                         android:orientation="horizontal">
 
                         <TextView
@@ -271,6 +264,7 @@
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true"
+                            android:layout_marginRight="@dimen/d50"
                             android:layout_alignParentTop="true"
                             android:text="@string/tocuh_pierde" />
 
@@ -281,9 +275,7 @@
                             android:layout_height="50dp"
                             android:background="@drawable/boton"
 
-                            android:text="+"
-                            android:textColor="#000000"
-                            android:textSize="30sp" />
+                            style="@style/botones_mas" />
 
                         <Button
                             android:id="@+id/angry_btn"
@@ -301,6 +293,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        style="@style/margin_layout"
                         android:orientation="horizontal">
 
                         <TextView
@@ -310,6 +303,7 @@
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true"
                             android:layout_alignParentTop="true"
+                            android:layout_marginRight="@dimen/d100"
                             android:text="@string/golpes" />
 
                         <Button
@@ -339,6 +333,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        style="@style/margin_layout"
                         android:orientation="horizontal">
 
                         <TextView
@@ -347,7 +342,9 @@
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true"
+                            android:layout_marginRight="@dimen/d5"
                             android:layout_alignParentTop="true"
+
                             android:text="@string/amarilla" />
 
                         <Button
@@ -377,6 +374,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        style="@style/margin_layout"
                         android:orientation="horizontal">
 
                         <TextView
@@ -386,6 +384,7 @@
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true"
                             android:layout_alignParentTop="true"
+                            android:layout_marginRight="@dimen/d35"
                             android:text="@string/roja" />
 
                         <Button
