@@ -5,8 +5,8 @@
     <string name="tocuh_gana">TOUCH GANADA</string>
     <string name="tocuh_pierde">TOUCH PERDIDA</string>
     <string name="golpes">GOLPES</string>
-    <string name="amarilla">TARJETAS AMARILLAS</string>
-    <string name="roja">TARJETAS ROJAS</string>
+    <string name="amarilla">AMARILLAS</string>
+    <string name="roja">ROJAS</string>
 
 
 </resources>

@@ -10,15 +10,60 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:layout_marginBottom="@dimen/d15"
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textView4"
+            style="@style/letra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="equipo 1" />
+            android:layout_weight="1"
+            android:text="tiempo jugado" />
+
+        <Chronometer
+            android:id="@+id/chronometer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/letra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="tiempo real" />
+
+        <Chronometer
+            android:id="@+id/chronometer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/d15"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
 
         <TextView
             android:id="@+id/textView"
@@ -27,27 +72,32 @@
             android:gravity="center"
             android:text="vs " />
 
-        <TextView
-            android:id="@+id/textView3"
+        <EditText
+            android:id="@+id/editText2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="equipo 2" />
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/d15"
         android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d70"
             android:layout_weight="1"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/textView6"
+                style="@style/letra"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="RESULTADO" />
@@ -67,27 +117,26 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/d70"
             android:layout_weight="1"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/textView10"
+                style="@style/letra"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:text="RESULTADO" />
 
             <Spinner
                 android:id="@+id/spinner2"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_height="wrap_content" />
 
             <Button
                 android:id="@+id/button6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:text="Button" />
         </LinearLayout>
 
@@ -98,31 +147,19 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/textView4"
+        <Button
+            android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="tiempo jugado" />
+            android:text="Avanzadas" />
 
-        <Chronometer
-            android:id="@+id/chronometer2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-        <TextView
-            android:id="@+id/textView5"
+        <Button
+            android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="tiempo real" />
-
-        <Chronometer
-            android:id="@+id/chronometer3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:text="Guardar" />
     </LinearLayout>
 
     <ScrollView
@@ -140,56 +177,65 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d70"
                     android:orientation="vertical">
 
                     <LinearLayout
+                        style="@style/margin_layout"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        style="@style/margin_layout"
                         android:orientation="horizontal">
 
                         <TextView
                             android:id="@+id/textmeleganada"
+                            style="@style/letra"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true"
-                            android:layout_marginRight="@dimen/d50"
                             android:layout_alignParentTop="true"
+                            android:layout_marginRight="@dimen/d50"
                             android:text="@string/mele_gana" />
 
-                        <Button
-                            android:id="@+id/angry_btn"
-
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:background="@drawable/boton"
-
-                            style="@style/botones_mas" />
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="TextView" />
 
                         <Button
                             android:id="@+id/angry_btn"
 
+                            style="@style/botones_mas"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:background="@drawable/boton"
 
-                            style="@style/botones_menos" />
+                            android:background="@drawable/boton" />
+
+                        <Button
+                            android:id="@+id/angry_btn"
+
+                            style="@style/botones_menos"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+
+                            android:background="@drawable/boton" />
                     </LinearLayout>
 
                     <LinearLayout
+                        style="@style/margin_layout"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        style="@style/margin_layout"
                         android:orientation="horizontal">
 
                         <TextView
                             android:id="@+id/textmeleganada"
+                            style="@style/letra"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
@@ -198,84 +244,107 @@
                             android:layout_marginRight="@dimen/d50"
                             android:text="@string/mele_pierde" />
 
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="TextView" />
+
                         <Button
                             android:id="@+id/angry_btn"
 
+                            style="@style/botones_mas"
                             android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            style="@style/botones_mas" />
+                            android:layout_height="50dp" />
 
                         <Button
                             android:id="@+id/angry_btn"
 
+                            style="@style/botones_menos"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:background="@drawable/boton"
 
-                            style="@style/botones_menos" />
+                            android:background="@drawable/boton" />
                     </LinearLayout>
 
                     <LinearLayout
+                        style="@style/margin_layout"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        style="@style/margin_layout"
                         android:orientation="horizontal">
 
                         <TextView
                             android:id="@+id/textmeleganada"
+                            style="@style/letra"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true"
-                            android:layout_marginRight="@dimen/d50"
                             android:layout_alignParentTop="true"
+                            android:layout_marginRight="@dimen/d50"
                             android:text="@string/tocuh_gana" />
 
-                        <Button
-                            android:id="@+id/angry_btn"
-
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:background="@drawable/boton"
-
-                            style="@style/botones_mas" />
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="TextView" />
 
                         <Button
                             android:id="@+id/angry_btn"
 
+                            style="@style/botones_mas"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:background="@drawable/boton"
 
-                            style="@style/botones_menos" />
+                            android:background="@drawable/boton" />
+
+                        <Button
+                            android:id="@+id/angry_btn"
+
+                            style="@style/botones_menos"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+
+                            android:background="@drawable/boton" />
                     </LinearLayout>
 
                     <LinearLayout
+                        style="@style/margin_layout"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        style="@style/margin_layout"
                         android:orientation="horizontal">
 
                         <TextView
                             android:id="@+id/textmeleganada"
+                            style="@style/letra"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true"
-                            android:layout_marginRight="@dimen/d50"
                             android:layout_alignParentTop="true"
+                            android:layout_marginRight="@dimen/d50"
                             android:text="@string/tocuh_pierde" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="TextView" />
 
                         <Button
                             android:id="@+id/angry_btn"
 
+                            style="@style/botones_mas"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:background="@drawable/boton"
 
-                            style="@style/botones_mas" />
+                            android:background="@drawable/boton" />
 
                         <Button
                             android:id="@+id/angry_btn"
@@ -290,14 +359,15 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        style="@style/margin_layout"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        style="@style/margin_layout"
                         android:orientation="horizontal">
 
                         <TextView
                             android:id="@+id/textmeleganada"
+                            style="@style/letra"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
@@ -306,71 +376,87 @@
                             android:layout_marginRight="@dimen/d100"
                             android:text="@string/golpes" />
 
-                        <Button
-                            android:id="@+id/angry_btn"
-
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:background="@drawable/boton"
-
-                            style="@style/botones_mas" />
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="TextView" />
 
                         <Button
                             android:id="@+id/angry_btn"
 
+                            style="@style/botones_mas"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:background="@drawable/boton"
 
-                            style="@style/botones_menos" />
+                            android:background="@drawable/boton" />
+
+                        <Button
+                            android:id="@+id/angry_btn"
+
+                            style="@style/botones_menos"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+
+                            android:background="@drawable/boton" />
                     </LinearLayout>
 
                     <LinearLayout
+                        style="@style/margin_layout"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        style="@style/margin_layout"
                         android:orientation="horizontal">
 
                         <TextView
                             android:id="@+id/textmeleganada"
+                            style="@style/letra"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true"
-                            android:layout_marginRight="@dimen/d5"
                             android:layout_alignParentTop="true"
+                            android:layout_marginRight="@dimen/d5"
 
                             android:text="@string/amarilla" />
 
-                        <Button
-                            android:id="@+id/angry_btn"
-
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:background="@drawable/boton"
-
-                            style="@style/botones_mas" />
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="TextView" />
 
                         <Button
                             android:id="@+id/angry_btn"
 
+                            style="@style/botones_mas"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:background="@drawable/boton"
 
-                            style="@style/botones_menos" />
+                            android:background="@drawable/boton" />
+
+                        <Button
+                            android:id="@+id/angry_btn"
+
+                            style="@style/botones_menos"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+
+                            android:background="@drawable/boton" />
                     </LinearLayout>
 
                     <LinearLayout
+                        style="@style/margin_layout"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        style="@style/margin_layout"
                         android:orientation="horizontal">
 
                         <TextView
                             android:id="@+id/textmeleganada"
+                            style="@style/letra"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
@@ -379,34 +465,42 @@
                             android:layout_marginRight="@dimen/d35"
                             android:text="@string/roja" />
 
-                        <Button
-                            android:id="@+id/angry_btn"
-
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:background="@drawable/boton"
-
-                            style="@style/botones_mas" />
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="TextView" />
 
                         <Button
                             android:id="@+id/angry_btn"
 
+                            style="@style/botones_mas"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:background="@drawable/boton"
 
-                            style="@style/botones_menos" />
+                            android:background="@drawable/boton" />
+
+                        <Button
+                            android:id="@+id/angry_btn"
+
+                            style="@style/botones_menos"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+
+                            android:background="@drawable/boton" />
                     </LinearLayout>
 
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d70"
                     android:orientation="vertical">
 
                     <LinearLayout
+                        style="@style/margin_layout"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -414,37 +508,43 @@
 
                         <TextView
                             android:id="@+id/textmeleganada"
+                            style="@style/letra"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true"
                             android:layout_alignParentTop="true"
+                            android:layout_marginRight="@dimen/d50"
                             android:text="@string/mele_gana" />
 
-                        <Button
-                            android:id="@+id/angry_btn"
-
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:background="@drawable/boton"
-
-                            android:text="+"
-                            android:textColor="#000000"
-                            android:textSize="30sp" />
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="TextView" />
 
                         <Button
                             android:id="@+id/angry_btn"
 
+                            style="@style/botones_mas"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:background="@drawable/boton"
 
-                            android:text="-"
-                            android:textColor="#000000"
-                            android:textSize="30sp" />
+                            android:background="@drawable/boton" />
+
+                        <Button
+                            android:id="@+id/angry_btn"
+
+                            style="@style/botones_menos"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+
+                            android:background="@drawable/boton" />
                     </LinearLayout>
 
                     <LinearLayout
+                        style="@style/margin_layout"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -452,37 +552,41 @@
 
                         <TextView
                             android:id="@+id/textmeleganada"
+                            style="@style/letra"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true"
                             android:layout_alignParentTop="true"
+                            android:layout_marginRight="@dimen/d50"
                             android:text="@string/mele_pierde" />
 
-                        <Button
-                            android:id="@+id/angry_btn"
-
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:background="@drawable/boton"
-
-                            android:text="+"
-                            android:textColor="#000000"
-                            android:textSize="30sp" />
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="TextView" />
 
                         <Button
                             android:id="@+id/angry_btn"
 
+                            style="@style/botones_mas"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp" />
+
+                        <Button
+                            android:id="@+id/angry_btn"
+
+                            style="@style/botones_menos"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:background="@drawable/boton"
 
-                            android:text="-"
-                            android:textColor="#000000"
-                            android:textSize="30sp" />
+                            android:background="@drawable/boton" />
                     </LinearLayout>
 
                     <LinearLayout
+                        style="@style/margin_layout"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -490,37 +594,43 @@
 
                         <TextView
                             android:id="@+id/textmeleganada"
+                            style="@style/letra"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true"
                             android:layout_alignParentTop="true"
+                            android:layout_marginRight="@dimen/d50"
                             android:text="@string/tocuh_gana" />
 
-                        <Button
-                            android:id="@+id/angry_btn"
-
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:background="@drawable/boton"
-
-                            android:text="+"
-                            android:textColor="#000000"
-                            android:textSize="30sp" />
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="TextView" />
 
                         <Button
                             android:id="@+id/angry_btn"
 
+                            style="@style/botones_mas"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:background="@drawable/boton"
 
-                            android:text="-"
-                            android:textColor="#000000"
-                            android:textSize="30sp" />
+                            android:background="@drawable/boton" />
+
+                        <Button
+                            android:id="@+id/angry_btn"
+
+                            style="@style/botones_menos"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+
+                            android:background="@drawable/boton" />
                     </LinearLayout>
 
                     <LinearLayout
+                        style="@style/margin_layout"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -528,23 +638,30 @@
 
                         <TextView
                             android:id="@+id/textmeleganada"
+                            style="@style/letra"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true"
                             android:layout_alignParentTop="true"
+                            android:layout_marginRight="@dimen/d50"
                             android:text="@string/tocuh_pierde" />
 
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="TextView" />
+
                         <Button
                             android:id="@+id/angry_btn"
 
+                            style="@style/botones_mas"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:background="@drawable/boton"
 
-                            android:text="+"
-                            android:textColor="#000000"
-                            android:textSize="30sp" />
+                            android:background="@drawable/boton" />
 
                         <Button
                             android:id="@+id/angry_btn"
@@ -559,6 +676,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        style="@style/margin_layout"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -566,37 +684,43 @@
 
                         <TextView
                             android:id="@+id/textmeleganada"
+                            style="@style/letra"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true"
                             android:layout_alignParentTop="true"
+                            android:layout_marginRight="@dimen/d100"
                             android:text="@string/golpes" />
 
-                        <Button
-                            android:id="@+id/angry_btn"
-
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:background="@drawable/boton"
-
-                            android:text="+"
-                            android:textColor="#000000"
-                            android:textSize="30sp" />
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="TextView" />
 
                         <Button
                             android:id="@+id/angry_btn"
 
+                            style="@style/botones_mas"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:background="@drawable/boton"
 
-                            android:text="-"
-                            android:textColor="#000000"
-                            android:textSize="30sp" />
+                            android:background="@drawable/boton" />
+
+                        <Button
+                            android:id="@+id/angry_btn"
+
+                            style="@style/botones_menos"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+
+                            android:background="@drawable/boton" />
                     </LinearLayout>
 
                     <LinearLayout
+                        style="@style/margin_layout"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -604,37 +728,45 @@
 
                         <TextView
                             android:id="@+id/textmeleganada"
+                            style="@style/letra"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true"
                             android:layout_alignParentTop="true"
+                            android:layout_marginRight="@dimen/d5"
+
                             android:text="@string/amarilla" />
 
-                        <Button
-                            android:id="@+id/angry_btn"
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
 
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:background="@drawable/boton"
-
-                            android:text="+"
-                            android:textColor="#000000"
-                            android:textSize="30sp" />
+                            android:text="TextView" />
 
                         <Button
                             android:id="@+id/angry_btn"
 
+                            style="@style/botones_mas"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:background="@drawable/boton"
 
-                            android:text="-"
-                            android:textColor="#000000"
-                            android:textSize="30sp" />
+                            android:background="@drawable/boton" />
+
+                        <Button
+                            android:id="@+id/angry_btn"
+
+                            style="@style/botones_menos"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+
+                            android:background="@drawable/boton" />
                     </LinearLayout>
 
                     <LinearLayout
+                        style="@style/margin_layout"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -642,36 +774,40 @@
 
                         <TextView
                             android:id="@+id/textmeleganada"
+                            style="@style/letra"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true"
                             android:layout_alignParentTop="true"
+                            android:layout_marginRight="@dimen/d35"
                             android:text="@string/roja" />
 
-                        <Button
-                            android:id="@+id/angry_btn"
-
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:background="@drawable/boton"
-
-                            android:text="+"
-                            android:textColor="#000000"
-                            android:textSize="30sp" />
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="TextView" />
 
                         <Button
                             android:id="@+id/angry_btn"
 
+                            style="@style/botones_mas"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:background="@drawable/boton"
 
-                            android:text="-"
-                            android:textColor="#000000"
-                            android:textSize="30sp" />
+                            android:background="@drawable/boton" />
+
+                        <Button
+                            android:id="@+id/angry_btn"
+
+                            style="@style/botones_menos"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+
+                            android:background="@drawable/boton" />
                     </LinearLayout>
-
                 </LinearLayout>
 
             </LinearLayout>
