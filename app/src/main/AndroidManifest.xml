@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".FormularioActivity" />
-        <activity android:name=".AvanzadaActivity"></activity>
+        <activity android:name=".AvanzadaActivity" />
+        <activity android:name=".EstadisticaActivity"></activity>
     </application>
 
 </manifest>

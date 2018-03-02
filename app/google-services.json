@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "986028101575",
+    "firebase_url": "https://proyecto-pacotech.firebaseio.com",
+    "project_id": "proyecto-pacotech",
+    "storage_bucket": "proyecto-pacotech.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:986028101575:android:ea20e9772288afb6",
+        "android_client_info": {
+          "package_name": "com.example.pruebasproyecto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "986028101575-t3i2p9s3p3ka85f68hh830uahugcjelt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pruebasproyecto",
+            "certificate_hash": "cf32595073049c43c227195bec4cdd42f60ca8fe"
+          }
+        },
+        {
+          "client_id": "986028101575-3c0khquptj7qcbqr2m63bjr5girvnndt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACWtgt57sCaDE6y3rSuHYWXaM_gDXJk74"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "986028101575-3c0khquptj7qcbqr2m63bjr5girvnndt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

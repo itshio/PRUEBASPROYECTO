@@ -11,41 +11,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/d15"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/textView4"
-            style="@style/letra"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="tiempo jugado" />
-
-        <Chronometer
-            android:id="@+id/chronometer2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-        <TextView
-            android:id="@+id/textView5"
-            style="@style/letra"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="tiempo real" />
-
-        <Chronometer
-            android:id="@+id/chronometer3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/d15"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -88,6 +53,41 @@
         android:layout_marginBottom="@dimen/d15"
         android:orientation="horizontal">
 
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/letra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="tiempo jugado" />
+
+        <Chronometer
+            android:id="@+id/chronometer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/letra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="tiempo real" />
+
+        <Chronometer
+            android:id="@+id/chronometer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/d15"
+        android:orientation="horizontal">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -104,7 +104,7 @@
 
             <Spinner
                 android:id="@+id/spinner"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content" />
 
             <Button
@@ -130,7 +130,7 @@
 
             <Spinner
                 android:id="@+id/spinner2"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content" />
 
             <Button
@@ -152,6 +152,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="click_avanzada"
             android:text="Avanzadas" />
 
         <Button
@@ -159,6 +160,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="click_guardar"
             android:text="Guardar" />
     </LinearLayout>
 
@@ -179,7 +181,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/d70"
+                    android:layout_marginLeft="@dimen/d20"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -503,7 +505,6 @@
                         style="@style/margin_layout"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
                         android:orientation="horizontal">
 
                         <TextView
@@ -547,7 +548,6 @@
                         style="@style/margin_layout"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
                         android:orientation="horizontal">
 
                         <TextView
@@ -589,7 +589,6 @@
                         style="@style/margin_layout"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
                         android:orientation="horizontal">
 
                         <TextView
@@ -633,7 +632,6 @@
                         style="@style/margin_layout"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
                         android:orientation="horizontal">
 
                         <TextView
@@ -679,7 +677,6 @@
                         style="@style/margin_layout"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
                         android:orientation="horizontal">
 
                         <TextView
@@ -723,7 +720,6 @@
                         style="@style/margin_layout"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
                         android:orientation="horizontal">
 
                         <TextView
@@ -769,7 +765,6 @@
                         style="@style/margin_layout"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
                         android:orientation="horizontal">
 
                         <TextView
