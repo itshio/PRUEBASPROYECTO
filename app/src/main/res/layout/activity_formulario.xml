@@ -58,11 +58,26 @@
             style="@style/letra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="tiempo jugado" />
 
+        <Button
+            android:id="@+id/formu_btniniciar_jugado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="click_iniciar_jugado"
+            android:layout_weight="1"
+            android:text="INICIAR" />
+
+        <Button
+            android:id="@+id/formu_btnpausar_jugado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="click_pausar_jugado"
+            android:layout_weight="1"
+            android:text="PAUSAR" />
+
         <Chronometer
-            android:id="@+id/chronometer2"
+            android:id="@+id/formu_crono_jugado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
@@ -72,11 +87,26 @@
             style="@style/letra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="tiempo real" />
 
+        <Button
+            android:id="@+id/formu_btniniciar_real"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="click_iniciar_real"
+            android:text="INICIAR" />
+
+        <Button
+            android:id="@+id/formu_btnpausar_real"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="click_pausar_real"
+            android:text="PAUSAR" />
+
         <Chronometer
-            android:id="@+id/chronometer3"
+            android:id="@+id/formu_crono_real"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
@@ -96,7 +126,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/formu_resultado_local"
                 style="@style/letra"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -122,7 +152,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/formu_resultado_visitante"
                 style="@style/letra"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -203,7 +233,7 @@
                             android:text="@string/mele_gana" />
 
                         <TextView
-                            android:id="@+id/textView2"
+                            android:id="@+id/formu_meleganada_local"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -247,7 +277,7 @@
                             android:text="@string/mele_pierde" />
 
                         <TextView
-                            android:id="@+id/textView3"
+                            android:id="@+id/formu_meleperdida_local"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -289,11 +319,11 @@
                             android:text="@string/tocuh_gana" />
 
                         <TextView
-                            android:id="@+id/textView7"
+                            android:id="@+id/formu_touchganada_local"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="TextView" />
+                            android:text="texto" />
 
                         <Button
                             android:id="@+id/angry_btn"
@@ -333,11 +363,11 @@
                             android:text="@string/tocuh_pierde" />
 
                         <TextView
-                            android:id="@+id/textView8"
+                            android:id="@+id/formu_touchperdida_local"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="TextView" />
+                            android:text="texto" />
 
                         <Button
                             android:id="@+id/angry_btn"
@@ -379,7 +409,7 @@
                             android:text="@string/golpes" />
 
                         <TextView
-                            android:id="@+id/textView9"
+                            android:id="@+id/formu_golpes_local"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -424,7 +454,7 @@
                             android:text="@string/amarilla" />
 
                         <TextView
-                            android:id="@+id/textView11"
+                            android:id="@+id/formu_amarilla_local"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -468,7 +498,7 @@
                             android:text="@string/roja" />
 
                         <TextView
-                            android:id="@+id/textView12"
+                            android:id="@+id/formu_rojas_local"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -519,7 +549,7 @@
                             android:text="@string/mele_gana" />
 
                         <TextView
-                            android:id="@+id/textView2"
+                            android:id="@+id/formu_meleganada_visitante"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -562,7 +592,7 @@
                             android:text="@string/mele_pierde" />
 
                         <TextView
-                            android:id="@+id/textView3"
+                            android:id="@+id/formu_meleperdida_visitante"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -587,8 +617,8 @@
 
                     <LinearLayout
                         style="@style/margin_layout"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
                         <TextView
@@ -603,11 +633,10 @@
                             android:text="@string/tocuh_gana" />
 
                         <TextView
-                            android:id="@+id/textView7"
+                            android:id="@+id/formu_touchganada_visitante"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="TextView" />
+                            android:text="texto" />
 
                         <Button
                             android:id="@+id/angry_btn"
@@ -646,7 +675,7 @@
                             android:text="@string/tocuh_pierde" />
 
                         <TextView
-                            android:id="@+id/textView8"
+                            android:id="@+id/formu_touchperdida_visitante"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -691,7 +720,7 @@
                             android:text="@string/golpes" />
 
                         <TextView
-                            android:id="@+id/textView9"
+                            android:id="@+id/formu_golpes_visitante"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -735,7 +764,7 @@
                             android:text="@string/amarilla" />
 
                         <TextView
-                            android:id="@+id/textView11"
+                            android:id="@+id/formu_amarilla_visitante"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -779,7 +808,7 @@
                             android:text="@string/roja" />
 
                         <TextView
-                            android:id="@+id/textView12"
+                            android:id="@+id/formu_roja_visitante"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
