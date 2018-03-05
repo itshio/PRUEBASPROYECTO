@@ -85,11 +85,11 @@ public class FormularioActivity extends AppCompatActivity {
         result_local=(Spinner)findViewById(R.id.formusp_resultado_local);
         result_visitante=(Spinner)findViewById(R.id.formusp_resultado_visitante);
 
-        String [] local = {"5","2","3"};
+        String [] local = {"","5","2","3"};
         ArrayAdapter<String> adaptadorlocal = new ArrayAdapter<String>(this,android.R.layout.simple_expandable_list_item_1,local);
         result_local.setAdapter(adaptadorlocal);
 
-        String [] visitante = {"5","2","3"};
+        String [] visitante = {"","5","2","3"};
         ArrayAdapter<String> adaptadorvisitante = new ArrayAdapter<String>(this,android.R.layout.simple_expandable_list_item_1,visitante);
         result_visitante.setAdapter(adaptadorvisitante);
 
@@ -266,11 +266,14 @@ public class FormularioActivity extends AppCompatActivity {
 
 
 
-       /* String resultadolocal_sumar= resultado_local.getText().toString();
+        String resultadolocal_sumar= resultado_local.getText().toString();
+        String spin_local=result_local.getSelectedItem().toString();
+
 
         int local=Integer.parseInt(resultadolocal_sumar);
-        int local_sumado= local+(result_local.getSelectedItem());
-        resultado_local.setText(local_sumado+"");*/
+        int local_sumado= Integer.parseInt(spin_local);
+        int suma =local+(local_sumado);
+        resultado_local.setText(suma+"");
 
 
 
@@ -283,10 +286,15 @@ public class FormularioActivity extends AppCompatActivity {
 
 
 
-        if(resultado_visitante_int<100){
-            resultado_visitante_int=resultado_local_int+1;
+        String resultadolocal_sumar= resultado_visitante.getText().toString();
+        String spin_visitante=result_visitante.getSelectedItem().toString();
 
-            resultado_visitante.setText(resultado_visitante_int+"");}
+
+        int local=Integer.parseInt(resultadolocal_sumar);
+        int local_sumado= Integer.parseInt(spin_visitante);
+        int suma =local+(local_sumado);
+        resultado_visitante.setText(suma+"");
+
 
 
 

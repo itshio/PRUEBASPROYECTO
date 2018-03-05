@@ -64,16 +64,16 @@
             android:id="@+id/formu_btniniciar_jugado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="click_iniciar_jugado"
             android:layout_weight="1"
+            android:onClick="click_iniciar_jugado"
             android:text="INICIAR" />
 
         <Button
             android:id="@+id/formu_btnpausar_jugado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="click_pausar_jugado"
             android:layout_weight="1"
+            android:onClick="click_pausar_jugado"
             android:text="PAUSAR" />
 
         <Chronometer
@@ -126,11 +126,19 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/formu_resultado_local"
+                android:id="@+id/textView2"
                 style="@style/letra"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="RESULTADO" />
+
+            <TextView
+                android:id="@+id/formu_resultado_local"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d10"
+                android:layout_marginRight="@dimen/d10"
+                android:text="0" />
 
             <Spinner
                 android:id="@+id/formusp_resultado_local"
@@ -141,6 +149,7 @@
                 android:id="@+id/button4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="clicksumar_resultado_local"
                 android:text="Button" />
         </LinearLayout>
 
@@ -152,11 +161,19 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/formu_resultado_visitante"
+                android:id="@+id/textView3"
                 style="@style/letra"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="RESULTADO" />
+
+            <TextView
+                android:id="@+id/formu_resultado_visitante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d10"
+                android:layout_marginRight="@dimen/d10"
+                android:text="0" />
 
             <Spinner
                 android:id="@+id/formusp_resultado_visitante"
@@ -167,6 +184,7 @@
                 android:id="@+id/button6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="clicksumar_resultado_visitante"
                 android:text="Button" />
         </LinearLayout>
 
