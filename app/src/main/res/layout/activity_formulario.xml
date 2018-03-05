@@ -15,7 +15,7 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/formu_fecha"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -23,7 +23,7 @@
             android:inputType="date" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/formulario_Et_equipolocal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -38,7 +38,7 @@
             android:text="vs " />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/formulario_Et_equipovisitante"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -133,7 +133,7 @@
                 android:text="RESULTADO" />
 
             <Spinner
-                android:id="@+id/spinner"
+                android:id="@+id/formusp_resultado_local"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content" />
 
@@ -159,7 +159,7 @@
                 android:text="RESULTADO" />
 
             <Spinner
-                android:id="@+id/spinner2"
+                android:id="@+id/formusp_resultado_visitante"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content" />
 
@@ -237,7 +237,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="TextView" />
+                            android:text="0" />
 
                         <Button
                             android:id="@+id/angry_btn"
@@ -245,6 +245,7 @@
                             style="@style/botones_mas"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
+                            android:onClick="clicksumar_meleganada_local"
 
                             android:background="@drawable/boton" />
 
@@ -254,6 +255,7 @@
                             style="@style/botones_menos"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
+                            android:onClick="clickrestar_meleganada_local"
 
                             android:background="@drawable/boton" />
                     </LinearLayout>
@@ -281,20 +283,22 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="TextView" />
+                            android:text="0" />
 
                         <Button
                             android:id="@+id/angry_btn"
 
                             style="@style/botones_mas"
                             android:layout_width="50dp"
+                            android:onClick="clicksumar_meleperdia_local"
                             android:layout_height="50dp" />
 
                         <Button
-                            android:id="@+id/angry_btn"
+                            android:id="@+id/meleperdida_local_restar"
 
                             style="@style/botones_menos"
                             android:layout_width="50dp"
+                            android:onClick="clickrestar_meleperdia_local"
                             android:layout_height="50dp"
 
                             android:background="@drawable/boton" />
@@ -323,13 +327,14 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="texto" />
+                            android:text="0" />
 
                         <Button
                             android:id="@+id/angry_btn"
 
                             style="@style/botones_mas"
                             android:layout_width="50dp"
+                            android:onClick="clicksumar_touchganada_local"
                             android:layout_height="50dp"
 
                             android:background="@drawable/boton" />
@@ -340,6 +345,7 @@
                             style="@style/botones_menos"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
+                            android:onClick="clickrestar_touchganada_local"
 
                             android:background="@drawable/boton" />
                     </LinearLayout>
@@ -367,7 +373,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="texto" />
+                            android:text="0" />
 
                         <Button
                             android:id="@+id/angry_btn"
@@ -375,6 +381,7 @@
                             style="@style/botones_mas"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
+                            android:onClick="clicksumar_touchperdida_local"
 
                             android:background="@drawable/boton" />
 
@@ -383,6 +390,7 @@
 
                             android:layout_width="50dp"
                             android:layout_height="50dp"
+                            android:onClick="clickrestar_touchperdida_local"
                             android:background="@drawable/boton"
 
                             android:text="-"
@@ -413,7 +421,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="TextView" />
+                            android:text="0" />
 
                         <Button
                             android:id="@+id/angry_btn"
@@ -421,6 +429,7 @@
                             style="@style/botones_mas"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
+                            android:onClick="clicksumar_golpes_local"
 
                             android:background="@drawable/boton" />
 
@@ -429,6 +438,7 @@
 
                             style="@style/botones_menos"
                             android:layout_width="50dp"
+                            android:onClick="clickrestar_golpes_local"
                             android:layout_height="50dp"
 
                             android:background="@drawable/boton" />
@@ -458,7 +468,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="TextView" />
+                            android:text="0" />
 
                         <Button
                             android:id="@+id/angry_btn"
@@ -466,6 +476,7 @@
                             style="@style/botones_mas"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
+                            android:onClick="clicksumar_amarilla_local"
 
                             android:background="@drawable/boton" />
 
@@ -475,6 +486,7 @@
                             style="@style/botones_menos"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
+                            android:onClick="clickrestar_amarilla_local"
 
                             android:background="@drawable/boton" />
                     </LinearLayout>
@@ -502,7 +514,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="TextView" />
+                            android:text="0" />
 
                         <Button
                             android:id="@+id/angry_btn"
@@ -510,6 +522,7 @@
                             style="@style/botones_mas"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
+                            android:onClick="clicksumar_roja_local"
 
                             android:background="@drawable/boton" />
 
@@ -518,6 +531,7 @@
 
                             style="@style/botones_menos"
                             android:layout_width="50dp"
+                            android:onClick="clickrestar_roja_local"
                             android:layout_height="50dp"
 
                             android:background="@drawable/boton" />
@@ -553,7 +567,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="TextView" />
+                            android:text="0" />
 
                         <Button
                             android:id="@+id/angry_btn"
@@ -561,6 +575,7 @@
                             style="@style/botones_mas"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
+                            android:onClick="clicksumar_meleganada_visitante"
 
                             android:background="@drawable/boton" />
 
@@ -570,6 +585,7 @@
                             style="@style/botones_menos"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
+                            android:onClick="clickrestar_meleganada_visitante"
 
                             android:background="@drawable/boton" />
                     </LinearLayout>
@@ -596,14 +612,15 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="TextView" />
+                            android:text="0" />
 
                         <Button
                             android:id="@+id/angry_btn"
 
                             style="@style/botones_mas"
                             android:layout_width="50dp"
-                            android:layout_height="50dp" />
+                            android:layout_height="50dp"
+                            android:onClick="clicksumar_meleperdida_visitante"/>
 
                         <Button
                             android:id="@+id/angry_btn"
@@ -611,6 +628,7 @@
                             style="@style/botones_menos"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
+                            android:onClick="clickrestar_meleperdida_visitante"
 
                             android:background="@drawable/boton" />
                     </LinearLayout>
@@ -636,7 +654,7 @@
                             android:id="@+id/formu_touchganada_visitante"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="texto" />
+                            android:text="0" />
 
                         <Button
                             android:id="@+id/angry_btn"
@@ -644,6 +662,7 @@
                             style="@style/botones_mas"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
+                            android:onClick="clicksumar_touchganada_visitante"
 
                             android:background="@drawable/boton" />
 
@@ -653,6 +672,7 @@
                             style="@style/botones_menos"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
+                            android:onClick="clickrestar_touchganada_visitante"
 
                             android:background="@drawable/boton" />
                     </LinearLayout>
@@ -678,8 +698,7 @@
                             android:id="@+id/formu_touchperdida_visitante"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="TextView" />
+                            android:text="0" />
 
                         <Button
                             android:id="@+id/angry_btn"
@@ -687,6 +706,7 @@
                             style="@style/botones_mas"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
+                            android:onClick="clicksumar_touchperdida_visitante"
 
                             android:background="@drawable/boton" />
 
@@ -695,6 +715,7 @@
 
                             android:layout_width="50dp"
                             android:layout_height="50dp"
+                            android:onClick="clickrestar_touchperdida_visitante"
                             android:background="@drawable/boton"
 
                             android:text="-"
@@ -724,7 +745,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="TextView" />
+                            android:text="0" />
 
                         <Button
                             android:id="@+id/angry_btn"
@@ -732,6 +753,7 @@
                             style="@style/botones_mas"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
+                            android:onClick="clicksumar_golpes_visitantes"
 
                             android:background="@drawable/boton" />
 
@@ -741,6 +763,7 @@
                             style="@style/botones_menos"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
+                            android:onClick="clickrestar_golpes_visitantes"
 
                             android:background="@drawable/boton" />
                     </LinearLayout>
@@ -769,7 +792,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
 
-                            android:text="TextView" />
+                            android:text="0" />
 
                         <Button
                             android:id="@+id/angry_btn"
@@ -777,6 +800,7 @@
                             style="@style/botones_mas"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
+                            android:onClick="clicksumar_amarilla_visitante"
 
                             android:background="@drawable/boton" />
 
@@ -786,6 +810,7 @@
                             style="@style/botones_menos"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
+                            android:onClick="clickrestar_amarilla_visitante"
 
                             android:background="@drawable/boton" />
                     </LinearLayout>
@@ -812,7 +837,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="TextView" />
+                            android:text="0" />
 
                         <Button
                             android:id="@+id/angry_btn"
@@ -820,6 +845,7 @@
                             style="@style/botones_mas"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
+                            android:onClick="clicksumar_roja_visitante"
 
                             android:background="@drawable/boton" />
 
@@ -829,6 +855,7 @@
                             style="@style/botones_menos"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
+                            android:onClick="clickrestar_roja_visitante"
 
                             android:background="@drawable/boton" />
                     </LinearLayout>
