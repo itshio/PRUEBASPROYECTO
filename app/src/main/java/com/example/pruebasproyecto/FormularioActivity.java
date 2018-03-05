@@ -487,10 +487,14 @@ public class FormularioActivity extends AppCompatActivity {
 
 
 
-        if(resultado_local_int>0){
-            resultado_local_int=resultado_local_int-1;
+        String resultadolocal_sumar= resultado_local.getText().toString();
+        String spin_local=result_local.getSelectedItem().toString();
 
-            resultado_local.setText(resultado_local_int+"");}
+
+        int local=Integer.parseInt(resultadolocal_sumar);
+        int local_sumado= Integer.parseInt(spin_local);
+        int suma =local-(local_sumado);
+        resultado_local.setText(suma+"");
 
 
 
@@ -500,10 +504,14 @@ public class FormularioActivity extends AppCompatActivity {
 
 
 
-        if(resultado_visitante_int>0){
-            resultado_visitante_int=resultado_local_int-1;
+        String resultadolocal_sumar= resultado_visitante.getText().toString();
+        String spin_visitante=result_visitante.getSelectedItem().toString();
 
-            resultado_visitante.setText(resultado_visitante_int+"");}
+
+        int local=Integer.parseInt(resultadolocal_sumar);
+        int local_sumado= Integer.parseInt(spin_visitante);
+        int suma =local-(local_sumado);
+        resultado_visitante.setText(suma+"");
 
 
 

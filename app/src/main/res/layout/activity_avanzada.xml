@@ -67,6 +67,7 @@
                         style="@style/botones_mas"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clicksumar_contrarucks_local"
 
                         android:background="@drawable/boton" />
 
@@ -76,6 +77,7 @@
                         style="@style/botones_menos"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clickestar_contrarucks_local"
 
                         android:background="@drawable/boton" />
                 </LinearLayout>
@@ -111,6 +113,7 @@
                         style="@style/botones_mas"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clicksumar_placajes_local"
 
                         android:background="@drawable/boton" />
 
@@ -120,6 +123,7 @@
                         style="@style/botones_menos"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clickestar_placajes_local"
 
                         android:background="@drawable/boton" />
                 </LinearLayout>
@@ -155,6 +159,7 @@
                         style="@style/botones_mas"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clicksumar_ensayoscastigo_local"
 
                         android:background="@drawable/boton" />
 
@@ -164,6 +169,7 @@
                         style="@style/botones_menos"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clickestar_ensayoscastigo_local"
 
                         android:background="@drawable/boton" />
                 </LinearLayout>
@@ -199,6 +205,7 @@
                         style="@style/botones_mas"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clicksumar_avant_local"
 
                         android:background="@drawable/boton" />
 
@@ -208,6 +215,7 @@
                         style="@style/botones_menos"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clickestar_avant_local"
 
                         android:background="@drawable/boton" />
                 </LinearLayout>
@@ -243,6 +251,7 @@
                         style="@style/botones_mas"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clicksumar_agrupamientoganado_local"
 
                         android:background="@drawable/boton" />
 
@@ -252,6 +261,7 @@
                         style="@style/botones_menos"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clickestar_agrupamientoganado_local"
 
                         android:background="@drawable/boton" />
                 </LinearLayout>
@@ -287,6 +297,7 @@
                         style="@style/botones_mas"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clicksumar_drop_local"
 
                         android:background="@drawable/boton" />
 
@@ -296,6 +307,7 @@
                         style="@style/botones_menos"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clickestar_drop_local"
 
                         android:background="@drawable/boton" />
                 </LinearLayout>
@@ -373,6 +385,7 @@
                         style="@style/botones_mas"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clicksumar_recuperaciones_local"
 
                         android:background="@drawable/boton" />
 
@@ -381,6 +394,7 @@
 
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clickestar_recuperaciones_local"
                         android:background="@drawable/boton"
 
                         android:text="-"
@@ -419,6 +433,7 @@
                         style="@style/botones_mas"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clicksumar_juegoalpiepositivo_local"
 
                         android:background="@drawable/boton" />
 
@@ -428,6 +443,7 @@
                         style="@style/botones_menos"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clickestar_juegoalpiepositivo_local"
 
                         android:background="@drawable/boton" />
                 </LinearLayout>
@@ -463,6 +479,7 @@
                         style="@style/botones_mas"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clicksumar_juegoalpienegativo_local"
 
                         android:background="@drawable/boton" />
 
@@ -472,6 +489,7 @@
                         style="@style/botones_menos"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clickestar_juegoalpienegativo_local"
 
                         android:background="@drawable/boton" />
                 </LinearLayout>
@@ -515,6 +533,7 @@
 
                         style="@style/botones_mas"
                         android:layout_width="50dp"
+                        android:onClick="clicksumar_contrarucks_visitante"
                         android:layout_height="50dp"
 
                         android:background="@drawable/boton" />
@@ -525,6 +544,7 @@
                         style="@style/botones_menos"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clickestar_contrarucks_visitante"
 
                         android:background="@drawable/boton" />
                 </LinearLayout>
@@ -560,6 +580,7 @@
                         style="@style/botones_mas"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clicksumar_placajes_visitante"
 
                         android:background="@drawable/boton" />
 
@@ -569,6 +590,7 @@
                         style="@style/botones_menos"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clickestar_placajes_visitante"
 
                         android:background="@drawable/boton" />
                 </LinearLayout>
@@ -604,6 +626,7 @@
                         style="@style/botones_mas"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clicksumar_ensayoscastigo_visitante"
 
                         android:background="@drawable/boton" />
 
@@ -613,6 +636,7 @@
                         style="@style/botones_menos"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clickestar_ensayoscastigo_visitante"
 
                         android:background="@drawable/boton" />
                 </LinearLayout>
@@ -648,6 +672,7 @@
                         style="@style/botones_mas"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clicksumar_avant_visitante"
 
                         android:background="@drawable/boton" />
 
@@ -657,6 +682,7 @@
                         style="@style/botones_menos"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clickestar_avant_visitante"
 
                         android:background="@drawable/boton" />
                 </LinearLayout>
@@ -692,6 +718,7 @@
                         style="@style/botones_mas"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clicksumar_drop_visitante"
 
                         android:background="@drawable/boton" />
 
@@ -701,6 +728,7 @@
                         style="@style/botones_menos"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clickestar_drop_visitante"
 
                         android:background="@drawable/boton" />
                 </LinearLayout>
@@ -735,7 +763,8 @@
 
                         style="@style/botones_mas"
                         android:layout_width="50dp"
-                        android:layout_height="50dp" />
+                        android:layout_height="50dp"
+                        android:onClick="clicksumar_agrupamientoperdido_visitante"/>
 
                     <Button
                         android:id="@+id/angry_btn"
@@ -743,6 +772,7 @@
                         style="@style/botones_menos"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clickestar_agrupamientoperdido_local"
 
                         android:background="@drawable/boton" />
                 </LinearLayout>
@@ -778,6 +808,7 @@
                         style="@style/botones_mas"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clicksumar_agrupamientoganado_visitante"
 
                         android:background="@drawable/boton" />
 
@@ -787,6 +818,7 @@
                         style="@style/botones_menos"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clickestar_agrupamientoganado_visitante"
 
                         android:background="@drawable/boton" />
                 </LinearLayout>
@@ -822,6 +854,7 @@
                         style="@style/botones_mas"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clicksumar_recuperaciones_visitante"
 
                         android:background="@drawable/boton" />
 
@@ -830,6 +863,7 @@
 
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clickestar_recuperaciones_visitante"
                         android:background="@drawable/boton"
 
                         android:text="-"
@@ -868,6 +902,7 @@
                         style="@style/botones_mas"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clicksumar_juegoalpiepositivo_visitante"
 
                         android:background="@drawable/boton" />
 
@@ -877,6 +912,7 @@
                         style="@style/botones_menos"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clickestar_juegoalpiepositivo_visitante"
 
                         android:background="@drawable/boton" />
                 </LinearLayout>
@@ -912,6 +948,7 @@
                         style="@style/botones_mas"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clicksumar_juegoalpienegativo_visitante"
 
                         android:background="@drawable/boton" />
 
@@ -921,6 +958,7 @@
                         style="@style/botones_menos"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clickestar_juegoalpienegativo_visitante"
 
                         android:background="@drawable/boton" />
                 </LinearLayout>
