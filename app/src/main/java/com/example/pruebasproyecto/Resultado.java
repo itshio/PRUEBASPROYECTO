@@ -15,9 +15,13 @@ public class Resultado implements Parcelable{
     int resultado_local;
     int resultado_visitante;
     int meleganada_local;
+    int meleperdida_local;
     int meleganada_visitante;
+    int meleperdida_visitante;
     int touchganada_local;
+    int touchperdida_local;
     int touchganada_visitante;
+    int touchperdida_visitante;
     int golpes_local;
     int golpes_visitante;
     int amarilla_local;
@@ -40,8 +44,10 @@ public class Resultado implements Parcelable{
     int drop_visitante;
     int ensayoscastigo_local;
     int ensayocastigo_visitante;
-    int juegoalpie_local;
-    int juegoalpie_visitante;
+    int juegoalpiepositivo_local;
+    int juegoalpiepositivo_visitante;
+    int juegoalpienegativo_visitante;
+    int juegoalpienegativo_local;
     int crono_real;
     int crono_jugado;
 
@@ -64,16 +70,20 @@ public class Resultado implements Parcelable{
         ReadFromParcel(parcel);
     }
 
-    public Resultado(String equipo_local, String equipo_visitante, int fecha, int resultado_local, int resultado_visitante, int meleganada_local, int meleganada_visitante, int touchganada_local, int touchganada_visitante, int golpes_local, int golpes_visitante, int amarilla_local, int amarilla_visitante, int roja_local, int roja_visitante, int agrupamientoganado_local, int agrupamientoganado_visitante, int agrupamientoperdido_local, int agrupamientoperdido_visitante, int avant_local, int avant_visitante, int recuperaciones_local, int recuperaciones_visitante, int placajes_local, int placajes_visitante, int contraruck_local, int contraruck_visitante, int drop_local, int drop_visitante, int ensayoscastigo_local, int ensayocastigo_visitante, int juegoalpie_local, int juegoalpie_visitante, int crono_real, int crono_jugado) {
+    public Resultado(String equipo_local, String equipo_visitante, int fecha, int resultado_local, int resultado_visitante, int meleganada_local, int meleperdida_local, int meleganada_visitante, int meleperdida_visitante, int touchganada_local, int touchperdida_local, int touchganada_visitante, int touchperdida_visitante, int golpes_local, int golpes_visitante, int amarilla_local, int amarilla_visitante, int roja_local, int roja_visitante, int agrupamientoganado_local, int agrupamientoganado_visitante, int agrupamientoperdido_local, int agrupamientoperdido_visitante, int avant_local, int avant_visitante, int recuperaciones_local, int recuperaciones_visitante, int placajes_local, int placajes_visitante, int contraruck_local, int contraruck_visitante, int drop_local, int drop_visitante, int ensayoscastigo_local, int ensayocastigo_visitante, int juegoalpiepositivo_local, int juegoalpiepositivo_visitante, int juegoalpienegativo_visitante, int juegoalpienegativo_local, int crono_real, int crono_jugado) {
         this.equipo_local = equipo_local;
         this.equipo_visitante = equipo_visitante;
         this.fecha = fecha;
         this.resultado_local = resultado_local;
         this.resultado_visitante = resultado_visitante;
         this.meleganada_local = meleganada_local;
+        this.meleperdida_local = meleperdida_local;
         this.meleganada_visitante = meleganada_visitante;
+        this.meleperdida_visitante = meleperdida_visitante;
         this.touchganada_local = touchganada_local;
+        this.touchperdida_local = touchperdida_local;
         this.touchganada_visitante = touchganada_visitante;
+        this.touchperdida_visitante = touchperdida_visitante;
         this.golpes_local = golpes_local;
         this.golpes_visitante = golpes_visitante;
         this.amarilla_local = amarilla_local;
@@ -96,8 +106,10 @@ public class Resultado implements Parcelable{
         this.drop_visitante = drop_visitante;
         this.ensayoscastigo_local = ensayoscastigo_local;
         this.ensayocastigo_visitante = ensayocastigo_visitante;
-        this.juegoalpie_local = juegoalpie_local;
-        this.juegoalpie_visitante = juegoalpie_visitante;
+        this.juegoalpiepositivo_local = juegoalpiepositivo_local;
+        this.juegoalpiepositivo_visitante = juegoalpiepositivo_visitante;
+        this.juegoalpienegativo_visitante = juegoalpienegativo_visitante;
+        this.juegoalpienegativo_local = juegoalpienegativo_local;
         this.crono_real = crono_real;
         this.crono_jugado = crono_jugado;
     }
@@ -150,12 +162,28 @@ public class Resultado implements Parcelable{
         this.meleganada_local = meleganada_local;
     }
 
+    public int getMeleperdida_local() {
+        return meleperdida_local;
+    }
+
+    public void setMeleperdida_local(int meleperdida_local) {
+        this.meleperdida_local = meleperdida_local;
+    }
+
     public int getMeleganada_visitante() {
         return meleganada_visitante;
     }
 
     public void setMeleganada_visitante(int meleganada_visitante) {
         this.meleganada_visitante = meleganada_visitante;
+    }
+
+    public int getMeleperdida_visitante() {
+        return meleperdida_visitante;
+    }
+
+    public void setMeleperdida_visitante(int meleperdida_visitante) {
+        this.meleperdida_visitante = meleperdida_visitante;
     }
 
     public int getTouchganada_local() {
@@ -166,12 +194,28 @@ public class Resultado implements Parcelable{
         this.touchganada_local = touchganada_local;
     }
 
+    public int getTouchperdida_local() {
+        return touchperdida_local;
+    }
+
+    public void setTouchperdida_local(int touchperdida_local) {
+        this.touchperdida_local = touchperdida_local;
+    }
+
     public int getTouchganada_visitante() {
         return touchganada_visitante;
     }
 
     public void setTouchganada_visitante(int touchganada_visitante) {
         this.touchganada_visitante = touchganada_visitante;
+    }
+
+    public int getTouchperdida_visitante() {
+        return touchperdida_visitante;
+    }
+
+    public void setTouchperdida_visitante(int touchperdida_visitante) {
+        this.touchperdida_visitante = touchperdida_visitante;
     }
 
     public int getGolpes_local() {
@@ -350,20 +394,36 @@ public class Resultado implements Parcelable{
         this.ensayocastigo_visitante = ensayocastigo_visitante;
     }
 
-    public int getJuegoalpie_local() {
-        return juegoalpie_local;
+    public int getJuegoalpiepositivo_local() {
+        return juegoalpiepositivo_local;
     }
 
-    public void setJuegoalpie_local(int juegoalpie_local) {
-        this.juegoalpie_local = juegoalpie_local;
+    public void setJuegoalpiepositivo_local(int juegoalpiepositivo_local) {
+        this.juegoalpiepositivo_local = juegoalpiepositivo_local;
     }
 
-    public int getJuegoalpie_visitante() {
-        return juegoalpie_visitante;
+    public int getJuegoalpiepositivo_visitante() {
+        return juegoalpiepositivo_visitante;
     }
 
-    public void setJuegoalpie_visitante(int juegoalpie_visitante) {
-        this.juegoalpie_visitante = juegoalpie_visitante;
+    public void setJuegoalpiepositivo_visitante(int juegoalpiepositivo_visitante) {
+        this.juegoalpiepositivo_visitante = juegoalpiepositivo_visitante;
+    }
+
+    public int getJuegoalpienegativo_visitante() {
+        return juegoalpienegativo_visitante;
+    }
+
+    public void setJuegoalpienegativo_visitante(int juegoalpienegativo_visitante) {
+        this.juegoalpienegativo_visitante = juegoalpienegativo_visitante;
+    }
+
+    public int getJuegoalpienegativo_local() {
+        return juegoalpienegativo_local;
+    }
+
+    public void setJuegoalpienegativo_local(int juegoalpienegativo_local) {
+        this.juegoalpienegativo_local = juegoalpienegativo_local;
     }
 
     public int getCrono_real() {
@@ -396,9 +456,12 @@ public class Resultado implements Parcelable{
         dest.writeInt(this.resultado_local);
         dest.writeInt(this.resultado_visitante);
         dest.writeInt(this.meleganada_local);
+        dest.writeInt(this.meleperdida_local);
         dest.writeInt(this.meleganada_visitante);
+        dest.writeInt(this.meleperdida_visitante);
         dest.writeInt(this.touchganada_local);
-        dest.writeInt(this.touchganada_visitante);
+        dest.writeInt(this.touchperdida_local);
+        dest.writeInt(this.touchperdida_visitante);
         dest.writeInt(this.golpes_local);
         dest.writeInt(this.golpes_visitante);
         dest.writeInt(this.amarilla_local);
@@ -421,8 +484,10 @@ public class Resultado implements Parcelable{
         dest.writeInt(this.drop_visitante);
         dest.writeInt(this.ensayoscastigo_local);
         dest.writeInt(this.ensayocastigo_visitante);
-        dest.writeInt(this.juegoalpie_local);
-        dest.writeInt(this.juegoalpie_visitante);
+        dest.writeInt(this.juegoalpiepositivo_local);
+        dest.writeInt(this.juegoalpiepositivo_visitante);
+        dest.writeInt(this.juegoalpienegativo_local);
+        dest.writeInt(this.juegoalpienegativo_visitante);
         dest.writeInt(this.crono_real);
         dest.writeInt(this.crono_jugado);
 
@@ -435,9 +500,13 @@ public class Resultado implements Parcelable{
         this.resultado_local=parcel.readInt();
         this.resultado_visitante=parcel.readInt();
         this.meleganada_local=parcel.readInt();
+        this.meleperdida_local=parcel.readInt();
         this.meleganada_visitante=parcel.readInt();
+        this.meleperdida_visitante=parcel.readInt();
         this.touchganada_local=parcel.readInt();
+        this.touchperdida_local=parcel.readInt();
         this.touchganada_visitante=parcel.readInt();
+        this.touchperdida_visitante=parcel.readInt();
         this.golpes_local=parcel.readInt();
         this.golpes_visitante=parcel.readInt();
         this.amarilla_local=parcel.readInt();
@@ -460,8 +529,10 @@ public class Resultado implements Parcelable{
         this.drop_visitante=parcel.readInt();
         this.ensayoscastigo_local=parcel.readInt();
         this.ensayocastigo_visitante=parcel.readInt();
-        this.juegoalpie_local=parcel.readInt();
-        this.juegoalpie_visitante=parcel.readInt();
+        this.juegoalpiepositivo_local=parcel.readInt();
+        this.juegoalpiepositivo_visitante=parcel.readInt();
+        this.juegoalpienegativo_local=parcel.readInt();
+        this.juegoalpienegativo_visitante=parcel.readInt();
         this.crono_real=parcel.readInt();
         this.crono_jugado=parcel.readInt();
 

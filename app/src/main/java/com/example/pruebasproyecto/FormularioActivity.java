@@ -11,6 +11,12 @@ import android.widget.Chronometer;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class FormularioActivity extends AppCompatActivity {
 
@@ -24,6 +30,9 @@ public class FormularioActivity extends AppCompatActivity {
     EditText fecha,equipo_local,equipo_visitante;
 
     Spinner result_local,result_visitante;
+
+    private DatabaseReference dbRef;
+    private ValueEventListener valueEventListener;
 
     int meleganada_local_int;
     int meleganada_visitante_int;
@@ -130,13 +139,13 @@ public class FormularioActivity extends AppCompatActivity {
 
     }
 
-    public void click_guardar (View view){
+    /*public void click_guardar (View view){
 
 
         Intent form_guardar = new Intent (getApplicationContext(),EstadisticaActivity.class);
         startActivity(form_guardar);
 
-    }
+    }*/
 
     private void iniciar (Chronometer chronometer){
 
@@ -591,6 +600,71 @@ public class FormularioActivity extends AppCompatActivity {
 
             roja_visitante.setText(roja_visitante_int+"");}
 
+
+
+
+    }
+
+    public void guardardatos (View view){
+
+        meleganada_local_int=Integer.parseInt(fecha.getText().toString());
+        meleganada_visitante_int=Integer.parseInt(fecha.getText().toString());
+        meleperdida_local_int=Integer.parseInt(fecha.getText().toString());
+        meleperdida_visitante_int=Integer.parseInt(fecha.getText().toString());
+        touchganada_local_int=Integer.parseInt(fecha.getText().toString());
+        touchganada_visitante_int=Integer.parseInt(fecha.getText().toString());
+        touchperdida_local_int=Integer.parseInt(fecha.getText().toString());
+        touchperdida_visitante_int=Integer.parseInt(fecha.getText().toString());
+        resultado_local_int=Integer.parseInt(fecha.getText().toString());
+        resultado_visitante_int=Integer.parseInt(fecha.getText().toString());
+        golpes_local_int=Integer.parseInt(fecha.getText().toString());
+        golpes_visitante_int=Integer.parseInt(fecha.getText().toString());
+        amarilla_local_int=Integer.parseInt(fecha.getText().toString());
+        amarilla_visitante_int=Integer.parseInt(fecha.getText().toString());
+        roja_local_int=Integer.parseInt(fecha.getText().toString());
+        roja_visitante_int=Integer.parseInt(fecha.getText().toString());
+
+        fecha_int=Integer.parseInt(fecha.getText().toString());
+
+
+
+        String equipo_local_int=equipo_local.getText().toString();
+        String equipo_visitante_int=equipo_visitante.getText().toString();
+
+        String fecha_string=fecha.getText().toString();
+
+
+        Resultado nuevoJugador = new Resultado(equipo_local_int, equipo_visitante_int,fecha_int,resultado_local_int,
+        resultado_visitante_int,meleganada_local_int,meleperdida_local_int  ,meleganada_visitante_int,meleperdida_visitante_int,
+        touchganada_local_int,touchperdida_local_int,touchganada_visitante_int,touchperdida_visitante_int,golpes_local_int,
+        golpes_visitante_int,amarilla_local_int,amarilla_visitante_int,roja_local_int,roja_visitante_int,0,0,0,
+        0,0 ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
+        dbRef = FirebaseDatabase.getInstance().getReference().child("parametros");
+
+        // STRING NUEVA CLASE
+
+        dbRef.child(fecha_string).setValue(nuevoJugador, new DatabaseReference.CompletionListener() {
+            @Override
+            public void onComplete(DatabaseError databaseError, DatabaseReference databaseReference) {
+
+                if (databaseError == null){
+
+                    Toast.makeText(getApplicationContext(),"agregado correctamente",Toast.LENGTH_LONG).show();
+
+
+
+
+                }else{
+
+                    Toast.makeText(getApplicationContext(),"no se puede agregar",Toast.LENGTH_LONG).show();
+
+
+                }
+
+
+
+            }
+        });
 
 
 
