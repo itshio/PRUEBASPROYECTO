@@ -270,7 +270,6 @@
                             android:id="@+id/formu_meleganada_local"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:text="0" />
 
                         <Button
@@ -316,7 +315,6 @@
                             android:id="@+id/formu_meleperdida_local"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:text="0" />
 
                         <Button
@@ -360,7 +358,6 @@
                             android:id="@+id/formu_touchganada_local"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:text="0" />
 
                         <Button
@@ -406,7 +403,6 @@
                             android:id="@+id/formu_touchperdida_local"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:text="0" />
 
                         <Button
@@ -454,7 +450,6 @@
                             android:id="@+id/formu_golpes_local"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:text="0" />
 
                         <Button
@@ -501,7 +496,6 @@
                             android:id="@+id/formu_amarilla_local"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:text="0" />
 
                         <Button
@@ -547,7 +541,6 @@
                             android:id="@+id/formu_rojas_local"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:text="0" />
 
                         <Button

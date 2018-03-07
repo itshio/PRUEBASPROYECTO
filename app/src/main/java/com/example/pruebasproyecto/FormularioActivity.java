@@ -76,6 +76,8 @@ public class FormularioActivity extends AppCompatActivity {
     int juegopositivo_local_int= 0;
     int juegospositivo_visitante_int= 0;
 
+    Resultado r =null;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -127,27 +129,32 @@ public class FormularioActivity extends AppCompatActivity {
 
         Bundle b = getIntent().getExtras();
         if(b!=null){
-          Resultado  r = b.getParcelable(AvanzadaActivity.EXTRA_AVANZADA);
+          r = b.getParcelable(AvanzadaActivity.EXTRA_AVANZADA);
 
             meleganada_local.setText(r.getMeleganada_local()+"");
             meleganada_visitante.setText(r.getMeleganada_visitante()+"");
-            meleperdida_local.setText(r.getMeleganada_visitante()+"");
-            meleperdida_visitante.setText(r.getMeleganada_visitante()+"");
-            touchganada_local.setText(r.getMeleganada_visitante()+"");
-            touchganada_visitante.setText(r.getMeleganada_visitante()+"");
-            touchperdida_local.setText(r.getMeleganada_visitante()+"");
-            touchperdida_visitante.setText(r.getMeleganada_visitante()+"");
-            resultado_local.setText(r.getMeleganada_visitante()+"");
-            resultado_visitante.setText(r.getMeleganada_visitante()+"");
-            golpes_local.setText(r.getMeleganada_visitante()+"");
-            golpes_visitante.setText(r.getMeleganada_visitante()+"");
-            amarilla_local.setText(r.getMeleganada_visitante()+"");
-            amarilla_visitante.setText(r.getMeleganada_visitante()+"");
-            roja_local.setText(r.getMeleganada_visitante()+"");
-            roja_visitante.setText(r.getMeleganada_visitante()+"");
-            fecha.setText(r.getMeleganada_visitante()+"");
-            equipo_local.setText(r.getMeleganada_visitante()+"");
-            equipo_visitante.setText(r.getMeleganada_visitante()+"");
+            meleperdida_local.setText(r.getMeleperdida_local()+"");
+            meleperdida_visitante.setText(r.getMeleperdida_visitante()+"");
+            touchganada_local.setText(r.getTouchganada_local()+"");
+            touchganada_visitante.setText(r.getTouchganada_visitante()+"");
+            touchperdida_local.setText(r.getTouchperdida_local()+"");
+            touchperdida_visitante.setText(r.getTouchperdida_visitante()+"");
+
+            resultado_local.setText(r.getResultado_local()+"");
+            resultado_visitante.setText(r.getResultado_visitante()+"");
+
+
+            golpes_local.setText(r.getGolpes_local()+"");
+            golpes_visitante.setText(r.getGolpes_visitante()+"");
+            amarilla_local.setText(r.getAmarilla_local()+"");
+            amarilla_visitante.setText(r.getAmarilla_visitante()+"");
+            roja_local.setText(r.getEquipo_local()+"");
+            roja_visitante.setText(r.getRoja_visitante()+"");
+
+
+            fecha.setText(r.getFecha()+"");
+            equipo_local.setText(r.getEquipo_local()+"");
+            equipo_visitante.setText(r.getEquipo_visitante()+"");
 
 
         }else
@@ -245,10 +252,9 @@ public class FormularioActivity extends AppCompatActivity {
         String equipo_local_int=equipo_local.getText().toString();
         String equipo_visitante_int=equipo_visitante.getText().toString();
 
-        String fecha_string=fecha.getText().toString();
 
 
-        Resultado nuevoJugador = new Resultado(equipo_local_int, equipo_visitante_int,fecha_int,resultado_local_int,
+        r = new Resultado(equipo_local_int, equipo_visitante_int,fecha_int,resultado_local_int,
                 resultado_visitante_int,meleganada_local_int,meleperdida_local_int  ,meleganada_visitante_int,meleperdida_visitante_int,
                 touchganada_local_int,touchperdida_local_int,touchganada_visitante_int,touchperdida_visitante_int,golpes_local_int,
                 golpes_visitante_int,amarilla_local_int,amarilla_visitante_int,roja_local_int,roja_visitante_int,agrupamientosganados_local_int,agrupamientosganados_visitante_int,agrupamientosperdidos_local_int,
@@ -256,7 +262,7 @@ public class FormularioActivity extends AppCompatActivity {
                 placajes_visitante_int,contrarucks_local_int,contrarucks_visitante_int,drop_local_int,drop_visitante_int,
                 ensayoscastigo_local_int,ensayoscastigo_visitante_int,juegopositivo_local_int,juegospositivo_visitante_int,
                 juegonegativo_visitante_int,juegopositivo_local_int,0,0);
-        form_avanzada.putExtra(EXTRA_FORMULARIO,nuevoJugador);
+        form_avanzada.putExtra(EXTRA_FORMULARIO,r);
         startActivity(form_avanzada);
 
     }
@@ -741,19 +747,19 @@ public class FormularioActivity extends AppCompatActivity {
         String fecha_string=fecha.getText().toString();
 
 
-        Resultado nuevoJugador = new Resultado(equipo_local_int, equipo_visitante_int,fecha_int,resultado_local_int,
+        /*r = new Resultado(equipo_local_int, equipo_visitante_int,fecha_int,resultado_local_int,
                 resultado_visitante_int,meleganada_local_int,meleperdida_local_int  ,meleganada_visitante_int,meleperdida_visitante_int,
                 touchganada_local_int,touchperdida_local_int,touchganada_visitante_int,touchperdida_visitante_int,golpes_local_int,
                 golpes_visitante_int,amarilla_local_int,amarilla_visitante_int,roja_local_int,roja_visitante_int,agrupamientosganados_local_int,agrupamientosganados_visitante_int,agrupamientosperdidos_local_int,
                 agrupamientosperdidos_visitante_int,avant_local_int ,avant_visitante_int,recuperaciones_local_int,recuperaciones_visitante_int,placajes_local_int,
                 placajes_visitante_int,contrarucks_local_int,contrarucks_visitante_int,drop_local_int,drop_visitante_int,
                 ensayoscastigo_local_int,ensayoscastigo_visitante_int,juegopositivo_local_int,juegospositivo_visitante_int,
-                juegonegativo_visitante_int,juegopositivo_local_int,0,0);
+                juegonegativo_visitante_int,juegopositivo_local_int,0,0);*/
         dbRef = FirebaseDatabase.getInstance().getReference().child("parametros");
 
         // STRING NUEVA CLASE
 
-        dbRef.child(fecha_string).setValue(nuevoJugador, new DatabaseReference.CompletionListener() {
+        dbRef.child(fecha_string).setValue(r, new DatabaseReference.CompletionListener() {
             @Override
             public void onComplete(DatabaseError databaseError, DatabaseReference databaseReference) {
 

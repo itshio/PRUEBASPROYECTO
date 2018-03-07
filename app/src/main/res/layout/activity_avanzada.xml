@@ -30,9 +30,8 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -57,7 +56,6 @@
                         android:id="@+id/avanzada_contrarucks_local"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:text="0" />
 
                     <Button
@@ -95,14 +93,13 @@
                         android:layout_alignParentLeft="true"
                         android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
-                        android:layout_marginRight="@dimen/d100"
+                        android:layout_marginRight="@dimen/d50"
                         android:text="PLACAJES" />
 
                     <TextView
                         android:id="@+id/placajes_local"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:text="0" />
 
                     <Button
@@ -147,7 +144,6 @@
                         android:id="@+id/ensayos_local"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:text="0" />
 
                     <Button
@@ -192,7 +188,6 @@
                         android:id="@+id/avant_local"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:text="0" />
 
                     <Button
@@ -237,7 +232,6 @@
                         android:id="@+id/agrupamientoganado_local"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:text="0" />
 
                     <Button
@@ -282,7 +276,6 @@
                         android:id="@+id/drop_local"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:text="0" />
 
                     <Button
@@ -327,7 +320,6 @@
                         android:id="@+id/agrupamientoperdido_local"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:text="0" />
 
                     <Button
@@ -336,7 +328,7 @@
                         style="@style/botones_mas"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:onClick="clicksumar_agrupamientoperdido_local"/>
+                        android:onClick="clicksumar_agrupamientoperdido_local" />
 
                     <Button
                         android:id="@+id/angry_btn"
@@ -344,9 +336,9 @@
                         style="@style/botones_menos"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:onClick="clickestar_agrupamientoperdido_local"
+                        android:background="@drawable/boton"
 
-                        android:background="@drawable/boton" />
+                        android:onClick="clickestar_agrupamientoperdido_local" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -370,8 +362,7 @@
                         android:id="@+id/recuperaciones_local"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="TextView" />
+                        android:text="0" />
 
                     <Button
                         android:id="@+id/angry_btn"
@@ -417,7 +408,6 @@
                         android:id="@+id/juegopositivo_local"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:text="0" />
 
                     <Button
@@ -462,7 +452,6 @@
                         android:id="@+id/juegonegativo_local"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:text="0" />
 
                     <Button
@@ -488,9 +477,8 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_marginLeft="@dimen/d20"
                 android:orientation="vertical">
 
@@ -517,7 +505,6 @@
                         android:id="@+id/avanzada_contrarucks_visitante"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:text="0" />
 
                     <Button
@@ -525,10 +512,10 @@
 
                         style="@style/botones_mas"
                         android:layout_width="50dp"
-                        android:onClick="clicksumar_contrarucks_visitante"
                         android:layout_height="50dp"
+                        android:background="@drawable/boton"
 
-                        android:background="@drawable/boton" />
+                        android:onClick="clicksumar_contrarucks_visitante" />
 
                     <Button
                         android:id="@+id/angry_btn"
@@ -536,9 +523,9 @@
                         style="@style/botones_menos"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:onClick="clickestar_contrarucks_visitante"
+                        android:background="@drawable/boton"
 
-                        android:background="@drawable/boton" />
+                        android:onClick="clickestar_contrarucks_visitante" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -563,7 +550,6 @@
                         android:id="@+id/placajes_visitante"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:text="0" />
 
                     <Button
@@ -572,9 +558,9 @@
                         style="@style/botones_mas"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:onClick="clicksumar_placajes_visitante"
+                        android:background="@drawable/boton"
 
-                        android:background="@drawable/boton" />
+                        android:onClick="clicksumar_placajes_visitante" />
 
                     <Button
                         android:id="@+id/angry_btn"
@@ -582,9 +568,9 @@
                         style="@style/botones_menos"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:onClick="clickestar_placajes_visitante"
+                        android:background="@drawable/boton"
 
-                        android:background="@drawable/boton" />
+                        android:onClick="clickestar_placajes_visitante" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -609,7 +595,6 @@
                         android:id="@+id/ensayos_visitante"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:text="0" />
 
                     <Button
@@ -618,9 +603,9 @@
                         style="@style/botones_mas"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:onClick="clicksumar_ensayoscastigo_visitante"
+                        android:background="@drawable/boton"
 
-                        android:background="@drawable/boton" />
+                        android:onClick="clicksumar_ensayoscastigo_visitante" />
 
                     <Button
                         android:id="@+id/angry_btn"
@@ -628,9 +613,9 @@
                         style="@style/botones_menos"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:onClick="clickestar_ensayoscastigo_visitante"
+                        android:background="@drawable/boton"
 
-                        android:background="@drawable/boton" />
+                        android:onClick="clickestar_ensayoscastigo_visitante" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -655,7 +640,6 @@
                         android:id="@+id/avant_visitante"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:text="0" />
 
                     <Button
@@ -664,9 +648,9 @@
                         style="@style/botones_mas"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:onClick="clicksumar_avant_visitante"
+                        android:background="@drawable/boton"
 
-                        android:background="@drawable/boton" />
+                        android:onClick="clicksumar_avant_visitante" />
 
                     <Button
                         android:id="@+id/angry_btn"
@@ -674,9 +658,9 @@
                         style="@style/botones_menos"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:onClick="clickestar_avant_visitante"
+                        android:background="@drawable/boton"
 
-                        android:background="@drawable/boton" />
+                        android:onClick="clickestar_avant_visitante" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -701,7 +685,6 @@
                         android:id="@+id/drop_visitante"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:text="0" />
 
                     <Button
@@ -710,9 +693,9 @@
                         style="@style/botones_mas"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:onClick="clicksumar_drop_visitante"
+                        android:background="@drawable/boton"
 
-                        android:background="@drawable/boton" />
+                        android:onClick="clicksumar_drop_visitante" />
 
                     <Button
                         android:id="@+id/angry_btn"
@@ -720,9 +703,9 @@
                         style="@style/botones_menos"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:onClick="clickestar_drop_visitante"
+                        android:background="@drawable/boton"
 
-                        android:background="@drawable/boton" />
+                        android:onClick="clickestar_drop_visitante" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -747,7 +730,6 @@
                         android:id="@+id/agrupamientoperdido_visitante"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:text="0" />
 
                     <Button
@@ -756,7 +738,7 @@
                         style="@style/botones_mas"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:onClick="clicksumar_agrupamientoperdido_visitante"/>
+                        android:onClick="clicksumar_agrupamientoperdido_visitante" />
 
                     <Button
                         android:id="@+id/angry_btn"
@@ -764,9 +746,9 @@
                         style="@style/botones_menos"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:onClick="clickestar_agrupamientoperdido_visitante"
+                        android:background="@drawable/boton"
 
-                        android:background="@drawable/boton" />
+                        android:onClick="clickestar_agrupamientoperdido_visitante" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -791,7 +773,6 @@
                         android:id="@+id/agrupamientoganado_visitante"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:text="0" />
 
                     <Button
@@ -800,9 +781,9 @@
                         style="@style/botones_mas"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:onClick="clicksumar_agrupamientoganado_visitante"
+                        android:background="@drawable/boton"
 
-                        android:background="@drawable/boton" />
+                        android:onClick="clicksumar_agrupamientoganado_visitante" />
 
                     <Button
                         android:id="@+id/angry_btn"
@@ -810,9 +791,9 @@
                         style="@style/botones_menos"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:onClick="clickestar_agrupamientoganado_visitante"
+                        android:background="@drawable/boton"
 
-                        android:background="@drawable/boton" />
+                        android:onClick="clickestar_agrupamientoganado_visitante" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -837,7 +818,6 @@
                         android:id="@+id/recuperaciones_visitante"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:text="0" />
 
                     <Button
@@ -846,17 +826,17 @@
                         style="@style/botones_mas"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:onClick="clicksumar_recuperaciones_visitante"
+                        android:background="@drawable/boton"
 
-                        android:background="@drawable/boton" />
+                        android:onClick="clicksumar_recuperaciones_visitante" />
 
                     <Button
                         android:id="@+id/angry_btn"
 
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:onClick="clickestar_recuperaciones_visitante"
                         android:background="@drawable/boton"
+                        android:onClick="clickestar_recuperaciones_visitante"
 
                         android:text="-"
                         android:textColor="#000000"
@@ -885,7 +865,6 @@
                         android:id="@+id/juegopositivo_visitante"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:text="0" />
 
                     <Button
@@ -894,9 +873,9 @@
                         style="@style/botones_mas"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:onClick="clicksumar_juegoalpiepositivo_visitante"
+                        android:background="@drawable/boton"
 
-                        android:background="@drawable/boton" />
+                        android:onClick="clicksumar_juegoalpiepositivo_visitante" />
 
                     <Button
                         android:id="@+id/angry_btn"
@@ -904,9 +883,9 @@
                         style="@style/botones_menos"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:onClick="clickestar_juegoalpiepositivo_visitante"
+                        android:background="@drawable/boton"
 
-                        android:background="@drawable/boton" />
+                        android:onClick="clickestar_juegoalpiepositivo_visitante" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -931,7 +910,6 @@
                         android:id="@+id/juegoperdido_visitante"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:text="0" />
 
                     <Button
@@ -940,9 +918,9 @@
                         style="@style/botones_mas"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:onClick="clicksumar_juegoalpienegativo_visitante"
+                        android:background="@drawable/boton"
 
-                        android:background="@drawable/boton" />
+                        android:onClick="clicksumar_juegoalpienegativo_visitante" />
 
                     <Button
                         android:id="@+id/angry_btn"
@@ -950,9 +928,9 @@
                         style="@style/botones_menos"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:onClick="clickestar_juegoalpienegativo_visitante"
+                        android:background="@drawable/boton"
 
-                        android:background="@drawable/boton" />
+                        android:onClick="clickestar_juegoalpienegativo_visitante" />
                 </LinearLayout>
 
             </LinearLayout>

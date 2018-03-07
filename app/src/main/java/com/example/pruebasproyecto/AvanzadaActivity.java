@@ -37,7 +37,7 @@ public class AvanzadaActivity extends AppCompatActivity {
     int juegopositivo_local_int;
     int juegospositivo_visitante_int;
 
-    int meleganada_local_int;
+    /*int meleganada_local_int;
     int meleganada_visitante_int;
     int meleperdida_local_int;
     int meleperdida_visitante_int;
@@ -56,9 +56,10 @@ public class AvanzadaActivity extends AppCompatActivity {
 
     int fecha_int;
     String equipo_local_int;
-    String equipo_visitante_int;
+    String equipo_visitante_int;*/
 
     Resultado r=null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,7 +69,7 @@ public class AvanzadaActivity extends AppCompatActivity {
         agrupamientosganados_local = (TextView) findViewById(R.id.agrupamientoganado_local);
         agrupamientosganados_visitante = (TextView) findViewById(R.id.agrupamientoganado_visitante);
         agrupamientosperdidos_local = (TextView) findViewById(R.id.agrupamientoperdido_local);
-        agrupamientosperdidos_visitante = (TextView) findViewById(R.id.agrupamientoganado_visitante);
+        agrupamientosperdidos_visitante = (TextView) findViewById(R.id.agrupamientoperdido_visitante);
         avant_local = (TextView) findViewById(R.id.avant_local);
         avant_visitante = (TextView) findViewById(R.id.avant_visitante);
         recuperaciones_local = (TextView) findViewById(R.id.recuperaciones_local);
