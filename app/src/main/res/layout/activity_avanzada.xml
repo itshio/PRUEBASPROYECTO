@@ -335,7 +335,8 @@
 
                         style="@style/botones_mas"
                         android:layout_width="50dp"
-                        android:layout_height="50dp" />
+                        android:layout_height="50dp"
+                        android:onClick="clicksumar_agrupamientoperdido_local"/>
 
                     <Button
                         android:id="@+id/angry_btn"
@@ -343,6 +344,7 @@
                         style="@style/botones_menos"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:onClick="clickestar_agrupamientoperdido_local"
 
                         android:background="@drawable/boton" />
                 </LinearLayout>
@@ -762,7 +764,7 @@
                         style="@style/botones_menos"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:onClick="clickestar_agrupamientoperdido_local"
+                        android:onClick="clickestar_agrupamientoperdido_visitante"
 
                         android:background="@drawable/boton" />
                 </LinearLayout>

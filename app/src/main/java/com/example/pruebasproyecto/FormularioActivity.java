@@ -34,26 +34,47 @@ public class FormularioActivity extends AppCompatActivity {
     private DatabaseReference dbRef;
     private ValueEventListener valueEventListener;
 
-    int meleganada_local_int;
-    int meleganada_visitante_int;
+    int meleganada_local_int ;
+    int meleganada_visitante_int ;
     int meleperdida_local_int;
     int meleperdida_visitante_int;
-    int touchganada_local_int;
-    int touchganada_visitante_int;
-    int touchperdida_local_int;
-    int touchperdida_visitante_int;
-    int resultado_local_int;
-    int resultado_visitante_int;
-    int golpes_local_int;
-    int golpes_visitante_int;
-    int amarilla_local_int;
-    int amarilla_visitante_int;
-    int roja_local_int;
-    int roja_visitante_int;
+    int touchganada_local_int ;
+    int touchganada_visitante_int ;
+    int touchperdida_local_int ;
+    int touchperdida_visitante_int ;
+    int resultado_local_int ;
+    int resultado_visitante_int ;
+    int golpes_local_int ;
+    int golpes_visitante_int ;
+    int amarilla_local_int ;
+    int amarilla_visitante_int ;
+    int roja_local_int ;
+    int roja_visitante_int ;
 
-    int fecha_int;
+    int fecha_int ;
     String equipo_local_int;
     String equipo_visitante_int;
+
+    int agrupamientosganados_local_int = 0;
+    int agrupamientosganados_visitante_int = 0;
+    int agrupamientosperdidos_local_int= 0;
+    int agrupamientosperdidos_visitante_int= 0;
+    int avant_local_int= 0;
+    int avant_visitante_int= 0;
+    int recuperaciones_local_int= 0;
+    int recuperaciones_visitante_int= 0;
+    int placajes_local_int= 0;
+    int placajes_visitante_int= 0;
+    int contrarucks_local_int= 0;
+    int contrarucks_visitante_int= 0;
+    int drop_local_int= 0;
+    int drop_visitante_int= 0;
+    int ensayoscastigo_local_int= 0;
+    int ensayoscastigo_visitante_int= 0;
+    int juegonegativo_local_int= 0;
+    int juegonegativo_visitante_int= 0;
+    int juegopositivo_local_int= 0;
+    int juegospositivo_visitante_int= 0;
 
 
     @Override
@@ -104,6 +125,35 @@ public class FormularioActivity extends AppCompatActivity {
 
 
 
+        Bundle b = getIntent().getExtras();
+        if(b!=null){
+          Resultado  r = b.getParcelable(AvanzadaActivity.EXTRA_AVANZADA);
+
+            meleganada_local.setText(r.getMeleganada_local()+"");
+            meleganada_visitante.setText(r.getMeleganada_visitante()+"");
+            meleperdida_local.setText(r.getMeleganada_visitante()+"");
+            meleperdida_visitante.setText(r.getMeleganada_visitante()+"");
+            touchganada_local.setText(r.getMeleganada_visitante()+"");
+            touchganada_visitante.setText(r.getMeleganada_visitante()+"");
+            touchperdida_local.setText(r.getMeleganada_visitante()+"");
+            touchperdida_visitante.setText(r.getMeleganada_visitante()+"");
+            resultado_local.setText(r.getMeleganada_visitante()+"");
+            resultado_visitante.setText(r.getMeleganada_visitante()+"");
+            golpes_local.setText(r.getMeleganada_visitante()+"");
+            golpes_visitante.setText(r.getMeleganada_visitante()+"");
+            amarilla_local.setText(r.getMeleganada_visitante()+"");
+            amarilla_visitante.setText(r.getMeleganada_visitante()+"");
+            roja_local.setText(r.getMeleganada_visitante()+"");
+            roja_visitante.setText(r.getMeleganada_visitante()+"");
+            fecha.setText(r.getMeleganada_visitante()+"");
+            equipo_local.setText(r.getMeleganada_visitante()+"");
+            equipo_visitante.setText(r.getMeleganada_visitante()+"");
+
+
+        }else
+        {
+
+        }
 
 
 
@@ -134,18 +184,83 @@ public class FormularioActivity extends AppCompatActivity {
 
     public void click_avanzada (View view){
 
-        Intent form_avanzada = new Intent(getApplicationContext(),AvanzadaActivity.class);
+
+
+        Intent form_avanzada=new Intent(getApplicationContext(),AvanzadaActivity.class);
+
+
+/*
+        meleganada_local_int = Integer.parseInt(meleganada_local.getText());
+        meleganada_visitante.getText();
+        meleperdida_local.getText();
+        meleperdida_visitante.getText();
+        touchganada_local.getText();
+        touchganada_visitante.getText();
+        touchperdida_local.getText();
+        touchperdida_visitante.getText();
+        resultado_local.getText();
+        resultado_visitante.getText();
+        golpes_local.getText();
+        golpes_visitante.getText();
+        amarilla_local.getText();
+        amarilla_visitante.getText();
+        roja_local.getText();
+        roja_visitante.getText();
+
+        fecha.getText().toString();
+        equipo_local.getText();
+        equipo_visitante.getText();
+
+        Resultado nuevoAvanzado = new Resultado(equipo_local_int, equipo_visitante_int,fecha_int,resultado_local_int,
+                resultado_visitante_int,meleganada_local_int,meleperdida_local_int  ,meleganada_visitante_int,meleperdida_visitante_int,
+                touchganada_local_int,touchperdida_local_int,touchganada_visitante_int,touchperdida_visitante_int,golpes_local_int,
+                golpes_visitante_int,amarilla_local_int,amarilla_visitante_int,roja_local_int,roja_visitante_int,agrupamientosganados_local_int,agrupamientosganados_visitante_int,agrupamientosperdidos_local_int,
+                agrupamientosperdidos_visitante_int,avant_local_int ,avant_visitante_int,recuperaciones_local_int,recuperaciones_visitante_int,placajes_local_int,
+                placajes_visitante_int,contrarucks_local_int,contrarucks_visitante_int,drop_local_int,drop_visitante_int,
+                ensayoscastigo_local_int,ensayoscastigo_visitante_int,juegopositivo_local_int,juegospositivo_visitante_int,
+                juegonegativo_visitante_int,juegopositivo_local_int,0,0);*/
+
+
+        meleganada_local_int=Integer.parseInt(meleganada_local.getText().toString());
+        meleganada_visitante_int=Integer.parseInt(meleganada_visitante.getText().toString());
+        meleperdida_local_int=Integer.parseInt(meleperdida_local.getText().toString());
+        meleperdida_visitante_int=Integer.parseInt(meleperdida_visitante.getText().toString());
+        touchganada_local_int=Integer.parseInt(touchganada_local.getText().toString());
+        touchganada_visitante_int=Integer.parseInt(touchganada_visitante.getText().toString());
+        touchperdida_local_int=Integer.parseInt(touchperdida_local.getText().toString());
+        touchperdida_visitante_int=Integer.parseInt(touchperdida_visitante.getText().toString());
+        resultado_local_int=Integer.parseInt(resultado_local.getText().toString());
+        resultado_visitante_int=Integer.parseInt(resultado_visitante.getText().toString());
+        golpes_local_int=Integer.parseInt(golpes_local.getText().toString());
+        golpes_visitante_int=Integer.parseInt(golpes_visitante.getText().toString());
+        amarilla_local_int=Integer.parseInt(amarilla_local.getText().toString());
+        amarilla_visitante_int=Integer.parseInt(amarilla_visitante.getText().toString());
+        roja_local_int=Integer.parseInt(roja_local.getText().toString());
+        roja_visitante_int=Integer.parseInt(roja_visitante.getText().toString());
+
+        fecha_int=Integer.parseInt(fecha.getText().toString());
+
+
+
+        String equipo_local_int=equipo_local.getText().toString();
+        String equipo_visitante_int=equipo_visitante.getText().toString();
+
+        String fecha_string=fecha.getText().toString();
+
+
+        Resultado nuevoJugador = new Resultado(equipo_local_int, equipo_visitante_int,fecha_int,resultado_local_int,
+                resultado_visitante_int,meleganada_local_int,meleperdida_local_int  ,meleganada_visitante_int,meleperdida_visitante_int,
+                touchganada_local_int,touchperdida_local_int,touchganada_visitante_int,touchperdida_visitante_int,golpes_local_int,
+                golpes_visitante_int,amarilla_local_int,amarilla_visitante_int,roja_local_int,roja_visitante_int,agrupamientosganados_local_int,agrupamientosganados_visitante_int,agrupamientosperdidos_local_int,
+                agrupamientosperdidos_visitante_int,avant_local_int ,avant_visitante_int,recuperaciones_local_int,recuperaciones_visitante_int,placajes_local_int,
+                placajes_visitante_int,contrarucks_local_int,contrarucks_visitante_int,drop_local_int,drop_visitante_int,
+                ensayoscastigo_local_int,ensayoscastigo_visitante_int,juegopositivo_local_int,juegospositivo_visitante_int,
+                juegonegativo_visitante_int,juegopositivo_local_int,0,0);
+        form_avanzada.putExtra(EXTRA_FORMULARIO,nuevoJugador);
         startActivity(form_avanzada);
 
     }
 
-    /*public void click_guardar (View view){
-
-
-        Intent form_guardar = new Intent (getApplicationContext(),EstadisticaActivity.class);
-        startActivity(form_guardar);
-
-    }*/
 
     private void iniciar (Chronometer chronometer){
 
@@ -156,14 +271,6 @@ public class FormularioActivity extends AppCompatActivity {
 
         chronometer.stop();
 
-    }
-
-    private void sumar (int parametro){
-
-        if(parametro<100){
-            parametro=parametro+1;
-
-            }
     }
 
     public void clicksumar_meleganada_local (View view){
@@ -607,22 +714,22 @@ public class FormularioActivity extends AppCompatActivity {
 
     public void guardardatos (View view){
 
-        meleganada_local_int=Integer.parseInt(fecha.getText().toString());
-        meleganada_visitante_int=Integer.parseInt(fecha.getText().toString());
-        meleperdida_local_int=Integer.parseInt(fecha.getText().toString());
-        meleperdida_visitante_int=Integer.parseInt(fecha.getText().toString());
-        touchganada_local_int=Integer.parseInt(fecha.getText().toString());
-        touchganada_visitante_int=Integer.parseInt(fecha.getText().toString());
-        touchperdida_local_int=Integer.parseInt(fecha.getText().toString());
-        touchperdida_visitante_int=Integer.parseInt(fecha.getText().toString());
-        resultado_local_int=Integer.parseInt(fecha.getText().toString());
-        resultado_visitante_int=Integer.parseInt(fecha.getText().toString());
-        golpes_local_int=Integer.parseInt(fecha.getText().toString());
-        golpes_visitante_int=Integer.parseInt(fecha.getText().toString());
-        amarilla_local_int=Integer.parseInt(fecha.getText().toString());
-        amarilla_visitante_int=Integer.parseInt(fecha.getText().toString());
-        roja_local_int=Integer.parseInt(fecha.getText().toString());
-        roja_visitante_int=Integer.parseInt(fecha.getText().toString());
+        meleganada_local_int=Integer.parseInt(meleganada_local.getText().toString());
+        meleganada_visitante_int=Integer.parseInt(meleganada_visitante.getText().toString());
+        meleperdida_local_int=Integer.parseInt(meleperdida_local.getText().toString());
+        meleperdida_visitante_int=Integer.parseInt(meleperdida_visitante.getText().toString());
+        touchganada_local_int=Integer.parseInt(touchganada_local.getText().toString());
+        touchganada_visitante_int=Integer.parseInt(touchganada_visitante.getText().toString());
+        touchperdida_local_int=Integer.parseInt(touchperdida_local.getText().toString());
+        touchperdida_visitante_int=Integer.parseInt(touchperdida_visitante.getText().toString());
+        resultado_local_int=Integer.parseInt(resultado_local.getText().toString());
+        resultado_visitante_int=Integer.parseInt(resultado_visitante.getText().toString());
+        golpes_local_int=Integer.parseInt(golpes_local.getText().toString());
+        golpes_visitante_int=Integer.parseInt(golpes_visitante.getText().toString());
+        amarilla_local_int=Integer.parseInt(amarilla_local.getText().toString());
+        amarilla_visitante_int=Integer.parseInt(amarilla_visitante.getText().toString());
+        roja_local_int=Integer.parseInt(roja_local.getText().toString());
+        roja_visitante_int=Integer.parseInt(roja_visitante.getText().toString());
 
         fecha_int=Integer.parseInt(fecha.getText().toString());
 
@@ -635,10 +742,13 @@ public class FormularioActivity extends AppCompatActivity {
 
 
         Resultado nuevoJugador = new Resultado(equipo_local_int, equipo_visitante_int,fecha_int,resultado_local_int,
-        resultado_visitante_int,meleganada_local_int,meleperdida_local_int  ,meleganada_visitante_int,meleperdida_visitante_int,
-        touchganada_local_int,touchperdida_local_int,touchganada_visitante_int,touchperdida_visitante_int,golpes_local_int,
-        golpes_visitante_int,amarilla_local_int,amarilla_visitante_int,roja_local_int,roja_visitante_int,0,0,0,
-        0,0 ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
+                resultado_visitante_int,meleganada_local_int,meleperdida_local_int  ,meleganada_visitante_int,meleperdida_visitante_int,
+                touchganada_local_int,touchperdida_local_int,touchganada_visitante_int,touchperdida_visitante_int,golpes_local_int,
+                golpes_visitante_int,amarilla_local_int,amarilla_visitante_int,roja_local_int,roja_visitante_int,agrupamientosganados_local_int,agrupamientosganados_visitante_int,agrupamientosperdidos_local_int,
+                agrupamientosperdidos_visitante_int,avant_local_int ,avant_visitante_int,recuperaciones_local_int,recuperaciones_visitante_int,placajes_local_int,
+                placajes_visitante_int,contrarucks_local_int,contrarucks_visitante_int,drop_local_int,drop_visitante_int,
+                ensayoscastigo_local_int,ensayoscastigo_visitante_int,juegopositivo_local_int,juegospositivo_visitante_int,
+                juegonegativo_visitante_int,juegopositivo_local_int,0,0);
         dbRef = FirebaseDatabase.getInstance().getReference().child("parametros");
 
         // STRING NUEVA CLASE
