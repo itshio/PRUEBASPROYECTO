@@ -9,6 +9,60 @@ import android.os.Parcelable;
 
 public class Resultado implements Parcelable{
 
+
+            /*equipo_local
+            equipo_visitante
+            fecha
+            resultado_local
+            resultado_visitante
+            meleganada_local
+            meleperdida_local
+            meleganada_visitante
+            meleperdida_visitante
+            touchganada_local
+            touchperdida_local
+            touchganada_visitante
+            touchperdida_visitante
+            golpes_local
+            golpes_visitante
+            amarilla_local
+            amarilla_visitante
+            roja_local
+            roja_visitante
+
+            "agrupamientoganado_visitante" : 1,
+            "agrupamientoperdido_local" : 0,
+            "agrupamientoperdido_visitante" : 1,
+
+            "avant_local" : 1,
+            "avant_visitante" : 0,
+            "contraruck_local" : 1,
+            "contraruck_visitante" : 0,
+            "crono_jugado" : 0,
+            "crono_real" : 0,
+            "drop_local" : 1,
+            "drop_visitante" : 1,
+            "ensayocastigo_visitante" : 0,
+            "ensayoscastigo_local" : 0,
+
+
+
+            "juegoalpienegativo_local" : 0,
+            "juegoalpienegativo_visitante" : 0,
+            "juegoalpiepositivo_local" : 0,
+            "juegoalpiepositivo_visitante" : 0,
+
+
+            "placajes_local" : 1,
+            "placajes_visitante" : 0,
+            "recuperaciones_local" : 0,
+            "recuperaciones_visitante" : 0,
+
+
+            */
+
+
+
     String equipo_local;
     String equipo_visitante;
     int fecha;
@@ -535,6 +589,7 @@ public class Resultado implements Parcelable{
         this.juegoalpienegativo_visitante=parcel.readInt();
         this.crono_real=parcel.readInt();
         this.crono_jugado=parcel.readInt();
+        this.fecha=parcel.readInt();
 
 
 

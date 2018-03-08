@@ -148,7 +148,7 @@ public class FormularioActivity extends AppCompatActivity {
             golpes_visitante.setText(r.getGolpes_visitante()+"");
             amarilla_local.setText(r.getAmarilla_local()+"");
             amarilla_visitante.setText(r.getAmarilla_visitante()+"");
-            roja_local.setText(r.getEquipo_local()+"");
+            roja_local.setText(r.getRoja_local()+"");
             roja_visitante.setText(r.getRoja_visitante()+"");
 
 
@@ -735,6 +735,7 @@ public class FormularioActivity extends AppCompatActivity {
         amarilla_local_int=Integer.parseInt(amarilla_local.getText().toString());
         amarilla_visitante_int=Integer.parseInt(amarilla_visitante.getText().toString());
         roja_local_int=Integer.parseInt(roja_local.getText().toString());
+        /*roja_local_int=33;*/
         roja_visitante_int=Integer.parseInt(roja_visitante.getText().toString());
 
         fecha_int=Integer.parseInt(fecha.getText().toString());
@@ -784,6 +785,12 @@ public class FormularioActivity extends AppCompatActivity {
 
 
 
+    }
+
+    public void click_stat (View view){
+
+        Intent form_stats=new Intent(getApplicationContext(),EstadisticaActivity.class);
+        startActivity(form_stats);
     }
 
 

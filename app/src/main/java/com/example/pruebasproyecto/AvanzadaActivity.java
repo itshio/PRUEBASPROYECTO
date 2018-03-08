@@ -16,6 +16,32 @@ public class AvanzadaActivity extends AppCompatActivity {
     TextView agrupamientosganados_local, agrupamientosganados_visitante, agrupamientosperdidos_local, agrupamientosperdidos_visitante, avant_local, avant_visitante, recuperaciones_local, recuperaciones_visitante, placajes_local, placajes_visitante, contrarucks_local, contrarucks_visitante, drop_local, drop_visitante, ensayoscastigo_local, ensayoscastigo_visitante,
             juegopositivo_local, juegospositivo_visitante, juegonegativo_local, juegonegativo_visitante;
 
+    String equipo_local_int;
+    String equipo_visitante_int;
+    int fecha_int;
+
+
+    int meleganada_local_int;
+    int meleganada_visitante_int;
+    int meleperdida_local_int;
+    int meleperdida_visitante_int;
+    int touchganada_local_int;
+    int touchganada_visitante_int;
+    int touchperdida_local_int;
+    int touchperdida_visitante_int;
+    int resultado_local_int;
+    int resultado_visitante_int;
+    int golpes_local_int;
+    int golpes_visitante_int;
+    int amarilla_local_int;
+    int amarilla_visitante_int;
+    int roja_local_int;
+    int roja_visitante_int;
+
+
+
+
+
     int agrupamientosganados_local_int;
     int agrupamientosganados_visitante_int;
     int agrupamientosperdidos_local_int;
@@ -37,26 +63,7 @@ public class AvanzadaActivity extends AppCompatActivity {
     int juegopositivo_local_int;
     int juegospositivo_visitante_int;
 
-    /*int meleganada_local_int;
-    int meleganada_visitante_int;
-    int meleperdida_local_int;
-    int meleperdida_visitante_int;
-    int touchganada_local_int;
-    int touchganada_visitante_int;
-    int touchperdida_local_int;
-    int touchperdida_visitante_int;
-    int resultado_local_int;
-    int resultado_visitante_int;
-    int golpes_local_int;
-    int golpes_visitante_int;
-    int amarilla_local_int;
-    int amarilla_visitante_int;
-    int roja_local_int;
-    int roja_visitante_int;
 
-    int fecha_int;
-    String equipo_local_int;
-    String equipo_visitante_int;*/
 
     Resultado r=null;
 
@@ -81,6 +88,7 @@ public class AvanzadaActivity extends AppCompatActivity {
         drop_local = (TextView) findViewById(R.id.drop_local);
         drop_visitante = (TextView) findViewById(R.id.drop_visitante);
         ensayoscastigo_local = (TextView) findViewById(R.id.ensayos_local);
+        ensayoscastigo_visitante = (TextView) findViewById(R.id.ensayos_visitante);
         juegonegativo_local = (TextView) findViewById(R.id.juegonegativo_local);
         juegonegativo_visitante = (TextView) findViewById(R.id.juegoperdido_visitante);
         juegopositivo_local = (TextView) findViewById(R.id.juegopositivo_local);
@@ -103,7 +111,9 @@ Bundle b = getIntent().getExtras();
             contrarucks_local.setText(r.getContraruck_local()+"");
             contrarucks_visitante.setText(r.getContraruck_visitante()+"");
             drop_local.setText(r.getDrop_local()+"");
-            ensayoscastigo_local.setText(r.getDrop_visitante()+"");
+            drop_visitante.setText(r.getDrop_visitante()+"");
+            ensayoscastigo_local.setText(r.getEnsayoscastigo_local()+"");
+            ensayoscastigo_visitante.setText(r.getEnsayocastigo_visitante()+"");
             juegonegativo_local.setText(r.getJuegoalpienegativo_local()+"");
             juegonegativo_visitante.setText(r.getJuegoalpienegativo_visitante()+"");
             juegopositivo_local.setText(r.getJuegoalpiepositivo_local()+"");
@@ -147,6 +157,8 @@ Bundle b = getIntent().getExtras();
         r.setDrop_visitante(drop_visitante_int);
         ensayoscastigo_local_int = Integer.parseInt(ensayoscastigo_local.getText().toString());
         r.setEnsayoscastigo_local(ensayoscastigo_local_int);
+        ensayoscastigo_visitante_int = Integer.parseInt(ensayoscastigo_visitante.getText().toString());
+        r.setEnsayoscastigo_local(ensayoscastigo_visitante_int);
         juegonegativo_local_int = Integer.parseInt(juegonegativo_local.getText().toString());
         r.setJuegoalpienegativo_local(juegonegativo_local_int);
         juegonegativo_visitante_int = Integer.parseInt(juegonegativo_visitante.getText().toString());

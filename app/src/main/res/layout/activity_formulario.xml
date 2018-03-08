@@ -20,7 +20,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="date" />
+            android:text="20180308"
+            android:inputType="text" />
 
         <EditText
             android:id="@+id/formulario_Et_equipolocal"
@@ -28,7 +29,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="LOCAL" />
 
         <TextView
             android:id="@+id/textView"
@@ -43,7 +44,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="VISITANTE" />
 
     </LinearLayout>
 
@@ -210,6 +211,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="click_stat"
+            android:layout_weight="1"
+            android:text="ESTADISTICA" />
 
         <Button
             android:id="@+id/button2"
