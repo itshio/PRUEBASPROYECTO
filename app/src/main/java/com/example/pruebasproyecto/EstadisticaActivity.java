@@ -22,6 +22,8 @@ import java.util.ListIterator;
 
 public class EstadisticaActivity extends AppCompatActivity {
 
+    static final String EXTRA_ESTADISTICA = "FORMULARIO";
+
     ListView lv_fechas;
 
     DatabaseReference dbRef;
@@ -82,6 +84,20 @@ ArrayList<Resultado> lista_partidos= new ArrayList<Resultado>();
 
 
         dbRef.addValueEventListener(valueEventListener);
+
+        lv_fechas.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                Resultado partido =((Resultado)parent.getItemAtPosition(position));
+                Intent form_temporal = new Intent(getApplicationContext(),GraficaActivity.class);
+                form_temporal.putExtra(EXTRA_ESTADISTICA,partido);
+                startActivity(form_temporal);
+
+
+
+            }
+        });
 
 
 
