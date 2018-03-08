@@ -54,6 +54,8 @@ ArrayList<Resultado> lista_partidos= new ArrayList<Resultado>();
 
 
 
+
+
             }
 
 
@@ -75,6 +77,10 @@ ArrayList<Resultado> lista_partidos= new ArrayList<Resultado>();
 
             }
         };
+
+
+
+
         dbRef.addValueEventListener(valueEventListener);
 
 
@@ -84,7 +90,7 @@ ArrayList<Resultado> lista_partidos= new ArrayList<Resultado>();
     public void click_temporal (View view){
 
 
-        Intent form_temporal = new Intent(getApplicationContext(),FormularioActivity.class);
+        Intent form_temporal = new Intent(getApplicationContext(),GraficaActivity.class);
         startActivity(form_temporal);
 
     }

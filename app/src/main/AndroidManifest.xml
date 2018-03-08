@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".FormularioActivity" />
         <activity android:name=".AvanzadaActivity" />
-        <activity android:name=".EstadisticaActivity"></activity>
+        <activity android:name=".EstadisticaActivity" />
+        <activity android:name=".GraficaActivity"></activity>
     </application>
 
 </manifest>
