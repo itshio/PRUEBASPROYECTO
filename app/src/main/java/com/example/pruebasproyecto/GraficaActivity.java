@@ -32,54 +32,55 @@ public class GraficaActivity extends AppCompatActivity {
 
             Resultado seriado = bundlist.getParcelable(EstadisticaActivity.EXTRA_ESTADISTICA);
 
-            barchart.setDrawBarShadow(false);
+            //barchart.setDrawBarShadow(false);
             barchart.setDrawValueAboveBar(true);
-            barchart.setPinchZoom(false);
+            //barchart.setPinchZoom(false);
+            barchart.setDrawGridBackground(true);
 
 
             ArrayList<BarEntry> graficas = new ArrayList<>();
 
 
-            graficas.add(new BarEntry(seriado.getMeleganada_local(), 2));
-            graficas.add(new BarEntry(seriado.getAgrupamientoganado_local(), 3));
-            graficas.add(new BarEntry(seriado.getAgrupamientoperdido_local(), 4));
-            graficas.add(new BarEntry(seriado.getAmarilla_local(), 5));
-            graficas.add(new BarEntry(seriado.getAvant_local(), 6));
-            graficas.add(new BarEntry(seriado.getContraruck_local(), 7));
-            graficas.add(new BarEntry(seriado.getGolpes_local(), 8));
-            graficas.add(new BarEntry(seriado.getEnsayoscastigo_local(), 9));
-            graficas.add(new BarEntry(seriado.getJuegoalpienegativo_local(), 10));
-            graficas.add(new BarEntry(seriado.getJuegoalpiepositivo_local(), 11));
-            graficas.add(new BarEntry(seriado.getMeleperdida_local(), 12));
-            graficas.add(new BarEntry(seriado.getTouchganada_local(), 13));
-            graficas.add(new BarEntry(seriado.getTouchperdida_local(), 14));
-            graficas.add(new BarEntry(seriado.getPlacajes_local(), 15));
-            graficas.add(new BarEntry(seriado.getRecuperaciones_local(), 16));
+            graficas.add(new BarEntry(1,seriado.getMeleganada_local()));
+            graficas.add(new BarEntry(2, seriado.getAgrupamientoganado_local()));
+            graficas.add(new BarEntry(3, seriado.getAgrupamientoperdido_local()));
+            graficas.add(new BarEntry(4, seriado.getAmarilla_local()));
+            graficas.add(new BarEntry(5, seriado.getAvant_local()));
+            graficas.add(new BarEntry(6, seriado.getContraruck_local()));
+            graficas.add(new BarEntry(7, seriado.getGolpes_local()));
+            graficas.add(new BarEntry(8, seriado.getEnsayoscastigo_local()));
+            graficas.add(new BarEntry(9, seriado.getJuegoalpienegativo_local()));
+            graficas.add(new BarEntry(10, seriado.getJuegoalpiepositivo_local()));
+            graficas.add(new BarEntry(11, seriado.getMeleperdida_local()));
+            graficas.add(new BarEntry(12, seriado.getTouchganada_local()));
+            graficas.add(new BarEntry(13, seriado.getTouchperdida_local()));
+            graficas.add(new BarEntry(14, seriado.getPlacajes_local()));
+            graficas.add(new BarEntry(15, seriado.getRecuperaciones_local()));
 
             ArrayList<BarEntry> graficas_visitante = new ArrayList<>();
 
 
-            graficas_visitante.add(new BarEntry(seriado.getMeleganada_visitante(), 2));
-            graficas_visitante.add(new BarEntry(seriado.getAgrupamientoganado_visitante(), 3));
-            graficas_visitante.add(new BarEntry(seriado.getAgrupamientoperdido_visitante(), 4));
-            graficas_visitante.add(new BarEntry(seriado.getAmarilla_visitante(), 5));
-            graficas_visitante.add(new BarEntry(seriado.getAvant_visitante(), 6));
-            graficas_visitante.add(new BarEntry(seriado.getContraruck_visitante(), 7));
-            graficas_visitante.add(new BarEntry(seriado.getGolpes_visitante(), 8));
-            graficas_visitante.add(new BarEntry(seriado.getEnsayocastigo_visitante(), 9));
-            graficas_visitante.add(new BarEntry(seriado.getJuegoalpienegativo_visitante(), 10));
-            graficas_visitante.add(new BarEntry(seriado.getJuegoalpiepositivo_visitante(), 11));
-            graficas_visitante.add(new BarEntry(seriado.getMeleperdida_visitante(), 12));
-            graficas_visitante.add(new BarEntry(seriado.getTouchganada_visitante(), 13));
-            graficas_visitante.add(new BarEntry(seriado.getTouchperdida_visitante(), 14));
-            graficas_visitante.add(new BarEntry(seriado.getPlacajes_visitante(), 15));
-            graficas_visitante.add(new BarEntry(seriado.getRecuperaciones_visitante(), 16));
+            graficas_visitante.add(new BarEntry(1, seriado.getMeleganada_visitante()));
+            graficas_visitante.add(new BarEntry(2, seriado.getAgrupamientoganado_visitante()));
+            graficas_visitante.add(new BarEntry(3, seriado.getAgrupamientoperdido_visitante()));
+            graficas_visitante.add(new BarEntry(4, seriado.getAmarilla_visitante()));
+            graficas_visitante.add(new BarEntry(5, seriado.getAvant_visitante()));
+            graficas_visitante.add(new BarEntry(6, seriado.getContraruck_visitante()));
+            graficas_visitante.add(new BarEntry(7, seriado.getGolpes_visitante()));
+            graficas_visitante.add(new BarEntry(8, seriado.getEnsayocastigo_visitante()));
+            graficas_visitante.add(new BarEntry(9, seriado.getJuegoalpienegativo_visitante()));
+            graficas_visitante.add(new BarEntry(10, seriado.getJuegoalpiepositivo_visitante()));
+            graficas_visitante.add(new BarEntry(11, seriado.getMeleperdida_visitante()));
+            graficas_visitante.add(new BarEntry(12, seriado.getTouchganada_visitante()));
+            graficas_visitante.add(new BarEntry(13, seriado.getTouchperdida_visitante()));
+            graficas_visitante.add(new BarEntry(14, seriado.getPlacajes_visitante()));
+            graficas_visitante.add(new BarEntry(15, seriado.getRecuperaciones_visitante()));
 
 
             BarDataSet bardataset = new BarDataSet(graficas, "Dates");
             bardataset.setColors(ColorTemplate.COLORFUL_COLORS);
 
-            BarDataSet bardataset_visitante = new BarDataSet(graficas, "Dates");
+            BarDataSet bardataset_visitante = new BarDataSet(graficas_visitante, "Dates");
             bardataset_visitante.setColors(ColorTemplate.COLORFUL_COLORS);
 
 
@@ -92,7 +93,7 @@ public class GraficaActivity extends AppCompatActivity {
             barchart.setData(barData);
 
 
-            barData.setBarWidth(barWidth);
+           barData.setBarWidth(barWidth);
             barchart.groupBars(1,groupSpace,barSpace);
 
 

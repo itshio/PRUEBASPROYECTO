@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/PRUEBASPROYECTO.iml" filepath="$PROJECT_DIR$/.idea/PRUEBASPROYECTO.iml" />
-      <module fileurl="file://C:\Users\FranciscoJavier\AndroidStudioProjects\PRUEBASPROYECTO\PRUEBASPROYECTO.iml" filepath="C:\Users\FranciscoJavier\AndroidStudioProjects\PRUEBASPROYECTO\PRUEBASPROYECTO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PRUEBASPROYECTO.iml" filepath="$PROJECT_DIR$/PRUEBASPROYECTO.iml" />
       <module fileurl="file://C:\Users\DIDACT\AndroidStudioProjects\PRUEBASPROYECTO\.idea\PRUEBASPROYECTO.iml" filepath="C:\Users\DIDACT\AndroidStudioProjects\PRUEBASPROYECTO\.idea\PRUEBASPROYECTO.iml" />
+      <module fileurl="file://C:\Users\FranciscoJavier\AndroidStudioProjects\PRUEBASPROYECTO\PRUEBASPROYECTO.iml" filepath="C:\Users\FranciscoJavier\AndroidStudioProjects\PRUEBASPROYECTO\PRUEBASPROYECTO.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://C:\Users\FranciscoJavier\AndroidStudioProjects\PRUEBASPROYECTO\app\app.iml" filepath="C:\Users\FranciscoJavier\AndroidStudioProjects\PRUEBASPROYECTO\app\app.iml" />
     </modules>

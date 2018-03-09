@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:text="20180308"
+            android:hint="20180308"
             android:inputType="text" />
 
         <EditText
@@ -51,7 +51,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/d15"
         android:orientation="horizontal">
 
         <TextView
@@ -116,7 +115,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/d15"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -282,7 +280,7 @@
                             android:text="0" />
 
                         <Button
-                            android:id="@+id/angry_btn"
+                            android:id="@+id/masmeleganadalocal"
 
                             style="@style/botones_mas"
                             android:layout_width="50dp"
@@ -292,12 +290,12 @@
                             android:background="@drawable/boton" />
 
                         <Button
-                            android:id="@+id/angry_btn"
+                            android:id="@+id/menosmeleganadalocal"
 
                             style="@style/botones_menos"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:onClick="clickrestar_meleganada_local"
+                            android:onClick="restar_ganada_local"
 
                             android:background="@drawable/boton" />
                     </LinearLayout>
@@ -310,7 +308,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textmeleganada"
+                            android:id="@+id/textmeleperdida"
                             style="@style/letra"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -327,7 +325,7 @@
                             android:text="0" />
 
                         <Button
-                            android:id="@+id/angry_btn"
+                            android:id="@+id/masmeleperdidalocal"
 
                             style="@style/botones_mas"
                             android:layout_width="50dp"
@@ -335,7 +333,7 @@
                             android:layout_height="50dp" />
 
                         <Button
-                            android:id="@+id/meleperdida_local_restar"
+                            android:id="@+id/menosmeleperdidalocal"
 
                             style="@style/botones_menos"
                             android:layout_width="50dp"
@@ -353,7 +351,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textmeleganada"
+                            android:id="@+id/texttouchganada"
                             style="@style/letra"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -370,7 +368,7 @@
                             android:text="0" />
 
                         <Button
-                            android:id="@+id/angry_btn"
+                            android:id="@+id/sumartouchganadalocal"
 
                             style="@style/botones_mas"
                             android:layout_width="50dp"
@@ -380,7 +378,7 @@
                             android:background="@drawable/boton" />
 
                         <Button
-                            android:id="@+id/angry_btn"
+                            android:id="@+id/restartouchganadalocal"
 
                             style="@style/botones_menos"
                             android:layout_width="50dp"
@@ -398,7 +396,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textmeleganada"
+                            android:id="@+id/texttouchperdidalocal"
                             style="@style/letra"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -415,7 +413,7 @@
                             android:text="0" />
 
                         <Button
-                            android:id="@+id/angry_btn"
+                            android:id="@+id/sumartouchperdidalocal"
 
                             style="@style/botones_mas"
                             android:layout_width="50dp"
@@ -425,7 +423,7 @@
                             android:background="@drawable/boton" />
 
                         <Button
-                            android:id="@+id/angry_btn"
+                            android:id="@+id/restartouchperdidalocal"
 
                             android:layout_width="50dp"
                             android:layout_height="50dp"
@@ -445,7 +443,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textmeleganada"
+                            android:id="@+id/textgolpeslocal"
                             style="@style/letra"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -462,7 +460,7 @@
                             android:text="0" />
 
                         <Button
-                            android:id="@+id/angry_btn"
+                            android:id="@+id/sumargolpeslocal"
 
                             style="@style/botones_mas"
                             android:layout_width="50dp"
@@ -472,7 +470,7 @@
                             android:background="@drawable/boton" />
 
                         <Button
-                            android:id="@+id/angry_btn"
+                            android:id="@+id/restargolpeslocal"
 
                             style="@style/botones_menos"
                             android:layout_width="50dp"
@@ -490,7 +488,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textmeleganada"
+                            android:id="@+id/textamarillalocal"
                             style="@style/letra"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -508,7 +506,7 @@
                             android:text="0" />
 
                         <Button
-                            android:id="@+id/angry_btn"
+                            android:id="@+id/sumaramarillalocal"
 
                             style="@style/botones_mas"
                             android:layout_width="50dp"
@@ -518,7 +516,7 @@
                             android:background="@drawable/boton" />
 
                         <Button
-                            android:id="@+id/angry_btn"
+                            android:id="@+id/restarmarillalocal"
 
                             style="@style/botones_menos"
                             android:layout_width="50dp"
@@ -536,7 +534,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textmeleganada"
+                            android:id="@+id/textrojaslocal"
                             style="@style/letra"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -553,7 +551,7 @@
                             android:text="0" />
 
                         <Button
-                            android:id="@+id/angry_btn"
+                            android:id="@+id/sumarrojaslocal"
 
                             style="@style/botones_mas"
                             android:layout_width="50dp"
@@ -563,7 +561,7 @@
                             android:background="@drawable/boton" />
 
                         <Button
-                            android:id="@+id/angry_btn"
+                            android:id="@+id/restarrojaslocal"
 
                             style="@style/botones_menos"
                             android:layout_width="50dp"
@@ -588,7 +586,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textmeleganada"
+                            android:id="@+id/textmeleganadavisitante"
                             style="@style/letra"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -606,7 +604,7 @@
                             android:text="0" />
 
                         <Button
-                            android:id="@+id/angry_btn"
+                            android:id="@+id/sumarmeleganadavisitante"
 
                             style="@style/botones_mas"
                             android:layout_width="50dp"
@@ -616,7 +614,7 @@
                             android:background="@drawable/boton" />
 
                         <Button
-                            android:id="@+id/angry_btn"
+                            android:id="@+id/restarmeleganadavisitante"
 
                             style="@style/botones_menos"
                             android:layout_width="50dp"
@@ -633,7 +631,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textmeleganada"
+                            android:id="@+id/textmeleperdidavisitante"
                             style="@style/letra"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -651,7 +649,7 @@
                             android:text="0" />
 
                         <Button
-                            android:id="@+id/angry_btn"
+                            android:id="@+id/sumarmeleperdidavisitante"
 
                             style="@style/botones_mas"
                             android:layout_width="50dp"
@@ -659,7 +657,7 @@
                             android:onClick="clicksumar_meleperdida_visitante"/>
 
                         <Button
-                            android:id="@+id/angry_btn"
+                            android:id="@+id/restarmeleperdidavisitante"
 
                             style="@style/botones_menos"
                             android:layout_width="50dp"
@@ -676,7 +674,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textmeleganada"
+                            android:id="@+id/textouchganadavisitante"
                             style="@style/letra"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -693,7 +691,7 @@
                             android:text="0" />
 
                         <Button
-                            android:id="@+id/angry_btn"
+                            android:id="@+id/sumartouchgandavisitante"
 
                             style="@style/botones_mas"
                             android:layout_width="50dp"
@@ -703,7 +701,7 @@
                             android:background="@drawable/boton" />
 
                         <Button
-                            android:id="@+id/angry_btn"
+                            android:id="@+id/restartouchganadavisitante"
 
                             style="@style/botones_menos"
                             android:layout_width="50dp"
@@ -720,7 +718,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textmeleganada"
+                            android:id="@+id/texttouchperdidavisitante"
                             style="@style/letra"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -737,7 +735,7 @@
                             android:text="0" />
 
                         <Button
-                            android:id="@+id/angry_btn"
+                            android:id="@+id/sumartouchperdidavisitante"
 
                             style="@style/botones_mas"
                             android:layout_width="50dp"
@@ -747,7 +745,7 @@
                             android:background="@drawable/boton" />
 
                         <Button
-                            android:id="@+id/angry_btn"
+                            android:id="@+id/restartouchperdidavisitante"
 
                             android:layout_width="50dp"
                             android:layout_height="50dp"
@@ -766,7 +764,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textmeleganada"
+                            android:id="@+id/textgolpesvisitante"
                             style="@style/letra"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -784,7 +782,7 @@
                             android:text="0" />
 
                         <Button
-                            android:id="@+id/angry_btn"
+                            android:id="@+id/sumargolpesvisitante"
 
                             style="@style/botones_mas"
                             android:layout_width="50dp"
@@ -794,7 +792,7 @@
                             android:background="@drawable/boton" />
 
                         <Button
-                            android:id="@+id/angry_btn"
+                            android:id="@+id/restargolpesvisitante"
 
                             style="@style/botones_menos"
                             android:layout_width="50dp"
@@ -811,7 +809,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textmeleganada"
+                            android:id="@+id/textamarillavisitante"
                             style="@style/letra"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -831,7 +829,7 @@
                             android:text="0" />
 
                         <Button
-                            android:id="@+id/angry_btn"
+                            android:id="@+id/sumaramarillavisitante"
 
                             style="@style/botones_mas"
                             android:layout_width="50dp"
@@ -841,7 +839,7 @@
                             android:background="@drawable/boton" />
 
                         <Button
-                            android:id="@+id/angry_btn"
+                            android:id="@+id/restaramarillavisitante"
 
                             style="@style/botones_menos"
                             android:layout_width="50dp"
@@ -858,7 +856,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textmeleganada"
+                            android:id="@+id/textrojasvisitante"
                             style="@style/letra"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -876,7 +874,7 @@
                             android:text="0" />
 
                         <Button
-                            android:id="@+id/angry_btn"
+                            android:id="@+id/sumarrojavisitante"
 
                             style="@style/botones_mas"
                             android:layout_width="50dp"
@@ -886,7 +884,7 @@
                             android:background="@drawable/boton" />
 
                         <Button
-                            android:id="@+id/angry_btn"
+                            android:id="@+id/restarrojavisitante"
 
                             style="@style/botones_menos"
                             android:layout_width="50dp"

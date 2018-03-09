@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -53,6 +54,22 @@ ArrayList<Resultado> lista_partidos= new ArrayList<Resultado>();
         Adaptador adaptador_empleado = new Adaptador(this,lista_partidos);
         lv_fechas.setAdapter(adaptador_empleado);
 
+        lv_fechas.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                //Toast.makeText(getApplicationContext(), "pulsaste", Toast.LENGTH_LONG).show();
+
+                Resultado partido =((Resultado)parent.getItemAtPosition(position));
+                Intent form_temporal = new Intent(getApplicationContext(),GraficaActivity.class);
+                form_temporal.putExtra(EXTRA_ESTADISTICA,partido);
+                startActivity(form_temporal);
+
+
+
+            }
+        });
+
 
 
 
@@ -85,19 +102,7 @@ ArrayList<Resultado> lista_partidos= new ArrayList<Resultado>();
 
         dbRef.addValueEventListener(valueEventListener);
 
-        lv_fechas.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                Resultado partido =((Resultado)parent.getItemAtPosition(position));
-                Intent form_temporal = new Intent(getApplicationContext(),GraficaActivity.class);
-                form_temporal.putExtra(EXTRA_ESTADISTICA,partido);
-                startActivity(form_temporal);
-
-
-
-            }
-        });
 
 
 

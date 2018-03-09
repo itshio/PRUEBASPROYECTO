@@ -514,14 +514,28 @@ public class FormularioActivity extends AppCompatActivity {
 
 
     }
+
+    public void restar_ganada_local (View view){
+
+        meleganada_local_int --;
+
+        meleganada_local.setText(meleganada_local_int+"");
+
+
+    }
     public void clickrestar_meleganada_local (View view){
-
-
 
         if(meleganada_local_int>0){
             meleganada_local_int=meleganada_local_int-1;
 
             meleganada_local.setText(meleganada_visitante_int+"");}
+
+
+
+
+
+
+
 
 
 
@@ -735,7 +749,6 @@ public class FormularioActivity extends AppCompatActivity {
         amarilla_local_int=Integer.parseInt(amarilla_local.getText().toString());
         amarilla_visitante_int=Integer.parseInt(amarilla_visitante.getText().toString());
         roja_local_int=Integer.parseInt(roja_local.getText().toString());
-        /*roja_local_int=33;*/
         roja_visitante_int=Integer.parseInt(roja_visitante.getText().toString());
 
         fecha_int=Integer.parseInt(fecha.getText().toString());
@@ -748,14 +761,14 @@ public class FormularioActivity extends AppCompatActivity {
         String fecha_string=fecha.getText().toString();
 
 
-        /*r = new Resultado(equipo_local_int, equipo_visitante_int,fecha_int,resultado_local_int,
+        r = new Resultado(equipo_local_int, equipo_visitante_int,fecha_int,resultado_local_int,
                 resultado_visitante_int,meleganada_local_int,meleperdida_local_int  ,meleganada_visitante_int,meleperdida_visitante_int,
                 touchganada_local_int,touchperdida_local_int,touchganada_visitante_int,touchperdida_visitante_int,golpes_local_int,
                 golpes_visitante_int,amarilla_local_int,amarilla_visitante_int,roja_local_int,roja_visitante_int,agrupamientosganados_local_int,agrupamientosganados_visitante_int,agrupamientosperdidos_local_int,
                 agrupamientosperdidos_visitante_int,avant_local_int ,avant_visitante_int,recuperaciones_local_int,recuperaciones_visitante_int,placajes_local_int,
                 placajes_visitante_int,contrarucks_local_int,contrarucks_visitante_int,drop_local_int,drop_visitante_int,
                 ensayoscastigo_local_int,ensayoscastigo_visitante_int,juegopositivo_local_int,juegospositivo_visitante_int,
-                juegonegativo_visitante_int,juegopositivo_local_int,0,0);*/
+                juegonegativo_visitante_int,juegopositivo_local_int,0,0);
         dbRef = FirebaseDatabase.getInstance().getReference().child("parametros");
 
         // STRING NUEVA CLASE
