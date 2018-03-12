@@ -56,6 +56,8 @@
                         android:id="@+id/avanzada_contrarucks_local"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
                         android:text="0" />
 
                     <Button
@@ -100,6 +102,8 @@
                         android:id="@+id/placajes_local"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
                         android:text="0" />
 
                     <Button
@@ -144,6 +148,8 @@
                         android:id="@+id/ensayos_local"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
                         android:text="0" />
 
                     <Button
@@ -188,6 +194,8 @@
                         android:id="@+id/avant_local"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
                         android:text="0" />
 
                     <Button
@@ -276,6 +284,8 @@
                         android:id="@+id/drop_local"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
                         android:text="0" />
 
                     <Button
@@ -320,6 +330,7 @@
                         android:id="@+id/agrupamientoperdido_local"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:gravity="right"
                         android:text="0" />
 
                     <Button
@@ -362,6 +373,8 @@
                         android:id="@+id/recuperaciones_local"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
                         android:text="0" />
 
                     <Button
@@ -408,6 +421,8 @@
                         android:id="@+id/juegopositivo_local"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
                         android:text="0" />
 
                     <Button
@@ -452,6 +467,8 @@
                         android:id="@+id/juegonegativo_local"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
                         android:text="0" />
 
                     <Button
@@ -505,6 +522,8 @@
                         android:id="@+id/avanzada_contrarucks_visitante"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
                         android:text="0" />
 
                     <Button
@@ -550,6 +569,8 @@
                         android:id="@+id/placajes_visitante"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
                         android:text="0" />
 
                     <Button
@@ -595,6 +616,8 @@
                         android:id="@+id/ensayos_visitante"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
                         android:text="0" />
 
                     <Button
@@ -640,6 +663,8 @@
                         android:id="@+id/avant_visitante"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
                         android:text="0" />
 
                     <Button
@@ -685,6 +710,8 @@
                         android:id="@+id/drop_visitante"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
                         android:text="0" />
 
                     <Button
@@ -773,6 +800,8 @@
                         android:id="@+id/agrupamientoganado_visitante"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
                         android:text="0" />
 
                     <Button
@@ -818,6 +847,8 @@
                         android:id="@+id/recuperaciones_visitante"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
                         android:text="0" />
 
                     <Button
@@ -865,6 +896,8 @@
                         android:id="@+id/juegopositivo_visitante"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
                         android:text="0" />
 
                     <Button
@@ -910,6 +943,8 @@
                         android:id="@+id/juegoperdido_visitante"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
                         android:text="0" />
 
                     <Button

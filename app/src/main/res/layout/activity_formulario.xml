@@ -457,6 +457,8 @@
                             android:id="@+id/formu_golpes_local"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:paddingRight="@dimen/d25"
+                            android:gravity="right"
                             android:text="0" />
 
                         <Button
@@ -465,19 +467,19 @@
                             style="@style/botones_mas"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:onClick="clicksumar_golpes_local"
+                            android:background="@drawable/boton"
 
-                            android:background="@drawable/boton" />
+                            android:onClick="clicksumar_golpes_local" />
 
                         <Button
                             android:id="@+id/restargolpeslocal"
 
                             style="@style/botones_menos"
                             android:layout_width="50dp"
-                            android:onClick="clickrestar_golpes_local"
                             android:layout_height="50dp"
+                            android:background="@drawable/boton"
 
-                            android:background="@drawable/boton" />
+                            android:onClick="clickrestar_golpes_local" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -503,6 +505,8 @@
                             android:id="@+id/formu_amarilla_local"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
                             android:text="0" />
 
                         <Button
@@ -548,6 +552,8 @@
                             android:id="@+id/formu_rojas_local"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
                             android:text="0" />
 
                         <Button
@@ -779,6 +785,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:gravity="right"
                             android:text="0" />
 
                         <Button
@@ -826,6 +833,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
 
+                            android:gravity="right"
                             android:text="0" />
 
                         <Button
@@ -871,6 +879,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:gravity="right"
                             android:text="0" />
 
                         <Button
