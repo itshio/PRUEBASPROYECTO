@@ -254,6 +254,8 @@ public class FormularioActivity extends AppCompatActivity {
 
 
 
+
+
         r = new Resultado(equipo_local_int, equipo_visitante_int,fecha_int,resultado_local_int,
                 resultado_visitante_int,meleganada_local_int,meleperdida_local_int  ,meleganada_visitante_int,meleperdida_visitante_int,
                 touchganada_local_int,touchperdida_local_int,touchganada_visitante_int,touchperdida_visitante_int,golpes_local_int,
@@ -263,6 +265,7 @@ public class FormularioActivity extends AppCompatActivity {
                 ensayoscastigo_local_int,ensayoscastigo_visitante_int,juegopositivo_local_int,juegospositivo_visitante_int,
                 juegonegativo_visitante_int,juegopositivo_local_int,0,0);
         form_avanzada.putExtra(EXTRA_FORMULARIO,r);
+
         startActivity(form_avanzada);
 
     }

@@ -9,57 +9,16 @@ import android.os.Parcelable;
 
 public class Resultado implements Parcelable{
 
-
-            /*equipo_local
-            equipo_visitante
-            fecha
-            resultado_local
-            resultado_visitante
-            meleganada_local
-            meleperdida_local
-            meleganada_visitante
-            meleperdida_visitante
-            touchganada_local
-            touchperdida_local
-            touchganada_visitante
-            touchperdida_visitante
-            golpes_local
-            golpes_visitante
-            amarilla_local
-            amarilla_visitante
-            roja_local
-            roja_visitante
-
-            "agrupamientoganado_visitante" : 1,
-            "agrupamientoperdido_local" : 0,
-            "agrupamientoperdido_visitante" : 1,
-
-            "avant_local" : 1,
-            "avant_visitante" : 0,
-            "contraruck_local" : 1,
-            "contraruck_visitante" : 0,
-            "crono_jugado" : 0,
-            "crono_real" : 0,
-            "drop_local" : 1,
-            "drop_visitante" : 1,
-            "ensayocastigo_visitante" : 0,
-            "ensayoscastigo_local" : 0,
+    public static final Parcelable.Creator<Resultado> CREATOR = new Parcelable.Creator<Resultado>(){
+        public Resultado createFromParcel(Parcel in) {
+            return new Resultado(in);
+        }
+        public Resultado[] newArray(int size){
+            return new Resultado[size];
+        }
+    };
 
 
-
-            "juegoalpienegativo_local" : 0,
-            "juegoalpienegativo_visitante" : 0,
-            "juegoalpiepositivo_local" : 0,
-            "juegoalpiepositivo_visitante" : 0,
-
-
-            "placajes_local" : 1,
-            "placajes_visitante" : 0,
-            "recuperaciones_local" : 0,
-            "recuperaciones_visitante" : 0,
-
-
-            */
 
 
 
@@ -105,68 +64,17 @@ public class Resultado implements Parcelable{
     int crono_real;
     int crono_jugado;
 
-    public static final Parcelable.Creator<Resultado> CREATOR = new Parcelable.Creator<Resultado>(){
-        public Resultado createFromParcel(Parcel in) {
-            return new Resultado(in);
-        }
-        public Resultado[] newArray(int size){
-            return new Resultado[size];
-        }
-    };
-
 
 
     public Resultado() {
     }
 
-    public Resultado(Parcel parcel){
+    public Resultado(Parcel parcel) {
 
         ReadFromParcel(parcel);
     }
 
-    public Resultado(String equipo_local, String equipo_visitante, int fecha, int resultado_local, int resultado_visitante, int meleganada_local, int meleperdida_local, int meleganada_visitante, int meleperdida_visitante, int touchganada_local, int touchperdida_local, int touchganada_visitante, int touchperdida_visitante, int golpes_local, int golpes_visitante, int amarilla_local, int amarilla_visitante, int roja_local, int roja_visitante, int agrupamientoganado_local, int agrupamientoganado_visitante, int agrupamientoperdido_local, int agrupamientoperdido_visitante, int avant_local, int avant_visitante, int recuperaciones_local, int recuperaciones_visitante, int placajes_local, int placajes_visitante, int contraruck_local, int contraruck_visitante, int drop_local, int drop_visitante, int ensayoscastigo_local, int ensayocastigo_visitante, int juegoalpiepositivo_local, int juegoalpiepositivo_visitante, int juegoalpienegativo_visitante, int juegoalpienegativo_local, int crono_real, int crono_jugado) {
-        this.equipo_local = equipo_local;
-        this.equipo_visitante = equipo_visitante;
-        this.fecha = fecha;
-        this.resultado_local = resultado_local;
-        this.resultado_visitante = resultado_visitante;
-        this.meleganada_local = meleganada_local;
-        this.meleperdida_local = meleperdida_local;
-        this.meleganada_visitante = meleganada_visitante;
-        this.meleperdida_visitante = meleperdida_visitante;
-        this.touchganada_local = touchganada_local;
-        this.touchperdida_local = touchperdida_local;
-        this.touchganada_visitante = touchganada_visitante;
-        this.touchperdida_visitante = touchperdida_visitante;
-        this.golpes_local = golpes_local;
-        this.golpes_visitante = golpes_visitante;
-        this.amarilla_local = amarilla_local;
-        this.amarilla_visitante = amarilla_visitante;
-        this.roja_local = roja_local;
-        this.roja_visitante = roja_visitante;
-        this.agrupamientoganado_local = agrupamientoganado_local;
-        this.agrupamientoganado_visitante = agrupamientoganado_visitante;
-        this.agrupamientoperdido_local = agrupamientoperdido_local;
-        this.agrupamientoperdido_visitante = agrupamientoperdido_visitante;
-        this.avant_local = avant_local;
-        this.avant_visitante = avant_visitante;
-        this.recuperaciones_local = recuperaciones_local;
-        this.recuperaciones_visitante = recuperaciones_visitante;
-        this.placajes_local = placajes_local;
-        this.placajes_visitante = placajes_visitante;
-        this.contraruck_local = contraruck_local;
-        this.contraruck_visitante = contraruck_visitante;
-        this.drop_local = drop_local;
-        this.drop_visitante = drop_visitante;
-        this.ensayoscastigo_local = ensayoscastigo_local;
-        this.ensayocastigo_visitante = ensayocastigo_visitante;
-        this.juegoalpiepositivo_local = juegoalpiepositivo_local;
-        this.juegoalpiepositivo_visitante = juegoalpiepositivo_visitante;
-        this.juegoalpienegativo_visitante = juegoalpienegativo_visitante;
-        this.juegoalpienegativo_local = juegoalpienegativo_local;
-        this.crono_real = crono_real;
-        this.crono_jugado = crono_jugado;
-    }
+
 
     public String getEquipo_local() {
         return equipo_local;
@@ -496,6 +404,51 @@ public class Resultado implements Parcelable{
         this.crono_jugado = crono_jugado;
     }
 
+    public Resultado(String equipo_local, String equipo_visitante, int fecha, int resultado_local, int resultado_visitante, int meleganada_local, int meleperdida_local, int meleganada_visitante, int meleperdida_visitante, int touchganada_local, int touchperdida_local, int touchganada_visitante, int touchperdida_visitante, int golpes_local, int golpes_visitante, int amarilla_local, int amarilla_visitante, int roja_local, int roja_visitante, int agrupamientoganado_local, int agrupamientoganado_visitante, int agrupamientoperdido_local, int agrupamientoperdido_visitante, int avant_local, int avant_visitante, int recuperaciones_local, int recuperaciones_visitante, int placajes_local, int placajes_visitante, int contraruck_local, int contraruck_visitante, int drop_local, int drop_visitante, int ensayoscastigo_local, int ensayocastigo_visitante, int juegoalpiepositivo_local, int juegoalpiepositivo_visitante, int juegoalpienegativo_visitante, int juegoalpienegativo_local, int crono_real, int crono_jugado) {
+
+        this.equipo_local = equipo_local;
+        this.equipo_visitante = equipo_visitante;
+        this.fecha = fecha;
+        this.resultado_local = resultado_local;
+        this.resultado_visitante = resultado_visitante;
+        this.meleganada_local = meleganada_local;
+        this.meleperdida_local = meleperdida_local;
+        this.meleganada_visitante = meleganada_visitante;
+        this.meleperdida_visitante = meleperdida_visitante;
+        this.touchganada_local = touchganada_local;
+        this.touchperdida_local = touchperdida_local;
+        this.touchganada_visitante = touchganada_visitante;
+        this.touchperdida_visitante = touchperdida_visitante;
+        this.golpes_local = golpes_local;
+        this.golpes_visitante = golpes_visitante;
+        this.amarilla_local = amarilla_local;
+        this.amarilla_visitante = amarilla_visitante;
+        this.roja_local = roja_local;
+        this.roja_visitante = roja_visitante;
+        this.agrupamientoganado_local = agrupamientoganado_local;
+        this.agrupamientoganado_visitante = agrupamientoganado_visitante;
+        this.agrupamientoperdido_local = agrupamientoperdido_local;
+        this.agrupamientoperdido_visitante = agrupamientoperdido_visitante;
+        this.avant_local = avant_local;
+        this.avant_visitante = avant_visitante;
+        this.recuperaciones_local = recuperaciones_local;
+        this.recuperaciones_visitante = recuperaciones_visitante;
+        this.placajes_local = placajes_local;
+        this.placajes_visitante = placajes_visitante;
+        this.contraruck_local = contraruck_local;
+        this.contraruck_visitante = contraruck_visitante;
+        this.drop_local = drop_local;
+        this.drop_visitante = drop_visitante;
+        this.ensayoscastigo_local = ensayoscastigo_local;
+        this.ensayocastigo_visitante = ensayocastigo_visitante;
+        this.juegoalpiepositivo_local = juegoalpiepositivo_local;
+        this.juegoalpiepositivo_visitante = juegoalpiepositivo_visitante;
+        this.juegoalpienegativo_visitante = juegoalpienegativo_visitante;
+        this.juegoalpienegativo_local = juegoalpienegativo_local;
+        this.crono_real = crono_real;
+        this.crono_jugado = crono_jugado;
+    }
+
     @Override
     public int describeContents() {
         return 0;
@@ -509,14 +462,14 @@ public class Resultado implements Parcelable{
         dest.writeInt(this.fecha);
         dest.writeInt(this.resultado_local);
         dest.writeInt(this.resultado_visitante);
-        dest.writeInt(this.meleganada_local);
-        dest.writeInt(this.meleperdida_local);
-        dest.writeInt(this.meleganada_visitante);
-        dest.writeInt(this.meleperdida_visitante);
-        dest.writeInt(this.touchganada_local);
+        dest.writeInt(this.meleganada_local); int meleperdida_local;
+        dest.writeInt (this.meleganada_visitante);
+        dest.writeInt (this.meleperdida_visitante);
+        dest.writeInt (this.touchganada_local);
         dest.writeInt(this.touchperdida_local);
-        dest.writeInt(this.touchperdida_visitante);
-        dest.writeInt(this.golpes_local);
+        dest.writeInt (this.touchganada_visitante);
+        dest.writeInt (this.touchperdida_visitante);
+        dest.writeInt (this.golpes_local);
         dest.writeInt(this.golpes_visitante);
         dest.writeInt(this.amarilla_local);
         dest.writeInt(this.amarilla_visitante);
@@ -540,58 +493,52 @@ public class Resultado implements Parcelable{
         dest.writeInt(this.ensayocastigo_visitante);
         dest.writeInt(this.juegoalpiepositivo_local);
         dest.writeInt(this.juegoalpiepositivo_visitante);
-        dest.writeInt(this.juegoalpienegativo_local);
         dest.writeInt(this.juegoalpienegativo_visitante);
-        dest.writeInt(this.crono_real);
-        dest.writeInt(this.crono_jugado);
+        dest.writeInt(this.juegoalpienegativo_local);
 
     }
 
     public void ReadFromParcel (Parcel parcel) {
 
-        this.equipo_local=parcel.readString();
-        this.equipo_visitante=parcel.readString();
-        this.resultado_local=parcel.readInt();
-        this.resultado_visitante=parcel.readInt();
-        this.meleganada_local=parcel.readInt();
-        this.meleperdida_local=parcel.readInt();
-        this.meleganada_visitante=parcel.readInt();
-        this.meleperdida_visitante=parcel.readInt();
-        this.touchganada_local=parcel.readInt();
-        this.touchperdida_local=parcel.readInt();
-        this.touchganada_visitante=parcel.readInt();
-        this.touchperdida_visitante=parcel.readInt();
-        this.golpes_local=parcel.readInt();
-        this.golpes_visitante=parcel.readInt();
-        this.amarilla_local=parcel.readInt();
-        this.amarilla_visitante=parcel.readInt();
-        this.roja_local=parcel.readInt();
-        this.roja_visitante=parcel.readInt();
-        this.agrupamientoganado_local=parcel.readInt();
-        this.agrupamientoganado_visitante=parcel.readInt();
-        this.agrupamientoperdido_local=parcel.readInt();
-        this.agrupamientoperdido_visitante=parcel.readInt();
-        this.avant_local=parcel.readInt();
-        this.avant_visitante=parcel.readInt();
-        this.recuperaciones_local=parcel.readInt();
-        this.recuperaciones_visitante=parcel.readInt();
-        this.placajes_local=parcel.readInt();
-        this.placajes_visitante=parcel.readInt();
-        this.contraruck_local=parcel.readInt();
-        this.contraruck_visitante=parcel.readInt();
-        this.drop_local=parcel.readInt();
-        this.drop_visitante=parcel.readInt();
-        this.ensayoscastigo_local=parcel.readInt();
-        this.ensayocastigo_visitante=parcel.readInt();
-        this.juegoalpiepositivo_local=parcel.readInt();
-        this.juegoalpiepositivo_visitante=parcel.readInt();
-        this.juegoalpienegativo_local=parcel.readInt();
-        this.juegoalpienegativo_visitante=parcel.readInt();
-        this.crono_real=parcel.readInt();
-        this.crono_jugado=parcel.readInt();
-        this.fecha=parcel.readInt();
-
-
+        this.equipo_local = parcel.readString();
+        this.equipo_visitante = parcel.readString();
+        this.fecha = parcel.readInt();
+        this.resultado_local = parcel.readInt();
+        this.resultado_visitante= parcel.readInt();
+        this.meleganada_local= parcel.readInt();
+        this.meleperdida_local= parcel.readInt();
+        this. meleganada_visitante= parcel.readInt();
+        this. meleperdida_visitante= parcel.readInt();
+        this. touchganada_local= parcel.readInt();
+        this. touchperdida_local= parcel.readInt();
+        this. touchganada_visitante= parcel.readInt();
+        this. touchperdida_visitante= parcel.readInt();
+        this. golpes_local= parcel.readInt();
+        this. golpes_visitante= parcel.readInt();
+        this. amarilla_local= parcel.readInt();
+        this. amarilla_visitante= parcel.readInt();
+        this. roja_local= parcel.readInt();
+        this. roja_visitante= parcel.readInt();
+        this. agrupamientoganado_local= parcel.readInt();
+        this. agrupamientoganado_visitante= parcel.readInt();
+        this. agrupamientoperdido_local= parcel.readInt();
+        this. agrupamientoperdido_visitante= parcel.readInt();
+        this. avant_local= parcel.readInt();
+        this. avant_visitante= parcel.readInt();
+        this. recuperaciones_local= parcel.readInt();
+        this. recuperaciones_visitante= parcel.readInt();
+        this. placajes_local= parcel.readInt();
+        this. placajes_visitante= parcel.readInt();
+        this. contraruck_local= parcel.readInt();
+        this. contraruck_visitante= parcel.readInt();
+        this. drop_local= parcel.readInt();
+        this. drop_visitante= parcel.readInt();
+        this. ensayoscastigo_local= parcel.readInt();
+        this. ensayocastigo_visitante= parcel.readInt();
+        this. juegoalpiepositivo_local= parcel.readInt();
+        this. juegoalpiepositivo_visitante= parcel.readInt();
+        this. juegoalpienegativo_visitante= parcel.readInt();
+        this. juegoalpienegativo_local= parcel.readInt();
 
     }
 }
