@@ -108,13 +108,7 @@ ArrayList<Resultado> lista_partidos= new ArrayList<Resultado>();
 
     }
 
-    public void click_temporal (View view){
 
-
-        Intent form_temporal = new Intent(getApplicationContext(),GraficaActivity.class);
-        startActivity(form_temporal);
-
-    }
 
 
 }

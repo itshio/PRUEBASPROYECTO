@@ -16,7 +16,7 @@ public class AvanzadaActivity extends AppCompatActivity {
     TextView agrupamientosganados_local, agrupamientosganados_visitante, agrupamientosperdidos_local, agrupamientosperdidos_visitante, avant_local, avant_visitante, recuperaciones_local, recuperaciones_visitante, placajes_local, placajes_visitante, contrarucks_local, contrarucks_visitante, drop_local, drop_visitante, ensayoscastigo_local, ensayoscastigo_visitante,
             juegopositivo_local, juegospositivo_visitante, juegonegativo_local, juegonegativo_visitante;
 
-    /*String equipo_local_int;
+    String equipo_local_int;
     String equipo_visitante_int;
     int fecha_int;
 
@@ -36,7 +36,7 @@ public class AvanzadaActivity extends AppCompatActivity {
     int amarilla_local_int;
     int amarilla_visitante_int;
     int roja_local_int;
-    int roja_visitante_int;*/
+    int roja_visitante_int;
 
 
 
@@ -94,12 +94,9 @@ public class AvanzadaActivity extends AppCompatActivity {
         juegopositivo_local = (TextView) findViewById(R.id.juegopositivo_local);
         juegospositivo_visitante = (TextView) findViewById(R.id.juegopositivo_visitante);
 
-
 Bundle b = getIntent().getExtras();
         if(b!=null){
-
-
-             r = b.getParcelable(FormularioActivity.EXTRA_FORMULARIO);
+              r = b.getParcelable(FormularioActivity.EXTRA_FORMULARIO);
 
             agrupamientosganados_local.setText(r.getAgrupamientoganado_local()+"");
             agrupamientosganados_visitante.setText(r.getAgrupamientoganado_visitante()+"");
@@ -125,7 +122,7 @@ Bundle b = getIntent().getExtras();
 
 
 
-       }
+        }
     }
 
     public void click_atras(View view) {

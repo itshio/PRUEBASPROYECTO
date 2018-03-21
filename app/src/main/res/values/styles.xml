@@ -43,7 +43,7 @@
 
     <style name="letra">
 
-        <item name="android:textSize">@dimen/d20</item>
+        <item name="android:textSize">@dimen/d15</item>
         <item name="android:textColor">@color/black</item>
 
     </style>

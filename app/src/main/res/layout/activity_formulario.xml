@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="20180308"
+            android:hint="Fecha:ddmmyyyy"
             android:inputType="text" />
 
         <EditText
@@ -53,83 +53,18 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/textView4"
-            style="@style/letra"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="tiempo jugado" />
-
-        <Button
-            android:id="@+id/formu_btniniciar_jugado"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="click_iniciar_jugado"
-            android:text="INICIAR" />
-
-        <Button
-            android:id="@+id/formu_btnpausar_jugado"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="click_pausar_jugado"
-            android:text="PAUSAR" />
-
-        <Chronometer
-            android:id="@+id/formu_crono_jugado"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-        <TextView
-            android:id="@+id/textView5"
-            style="@style/letra"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="tiempo real" />
-
-        <Button
-            android:id="@+id/formu_btniniciar_real"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="click_iniciar_real"
-            android:text="INICIAR" />
-
-        <Button
-            android:id="@+id/formu_btnpausar_real"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="click_pausar_real"
-            android:text="PAUSAR" />
-
-        <Chronometer
-            android:id="@+id/formu_crono_real"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/d70"
             android:layout_weight="1"
-            android:orientation="horizontal">
+            android:orientation="horizontal">"@dimen/d20"
 
             <TextView
                 android:id="@+id/textView2"
                 style="@style/letra"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="RESULTADO" />
+                android:text="RESULT LOCAL" />
 
             <TextView
                 android:id="@+id/formu_resultado_local"
@@ -156,14 +91,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="clickrestar_resultado_local"
-                android:layout_weight="1"
                 android:text="Button" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/d70"
+            android:layout_marginLeft="@dimen/d15"
             android:layout_weight="1"
             android:orientation="horizontal">
 
@@ -172,7 +106,7 @@
                 style="@style/letra"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="RESULTADO" />
+                android:text="RESULT VISITANTE" />
 
             <TextView
                 android:id="@+id/formu_resultado_visitante"
@@ -199,7 +133,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="clickrestar_resultado_visitante"
-                android:layout_weight="1"
                 android:text="Button" />
         </LinearLayout>
 
@@ -211,7 +144,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button10"
+            android:id="@+id/formu_estat_butom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="click_stat"
@@ -219,17 +152,19 @@
             android:text="ESTADISTICA" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/formu_avan_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:enabled="false"
             android:layout_weight="1"
             android:onClick="click_avanzada"
             android:text="Avanzadas" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/formu_guard_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:enabled="false"
             android:layout_weight="1"
             android:onClick="guardardatos"
             android:text="Guardar" />
@@ -347,7 +282,6 @@
                         style="@style/margin_layout"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
                         android:orientation="horizontal">
 
                         <TextView
